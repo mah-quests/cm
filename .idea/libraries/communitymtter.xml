@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="communitymtter">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/admin/assets/communitymtter/Fira Sans font family.zip!/" />
+      <root url="jar://$PROJECT_DIR$/admin/assets/communitymtter/NSP report 2020 image elements.zip!/" />
+      <root url="jar://$PROJECT_DIR$/admin/assets/communitymtter/Roboto font family.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
