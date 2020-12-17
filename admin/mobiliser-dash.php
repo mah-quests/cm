@@ -15,72 +15,10 @@ if ($_SESSION['loggedin']  != TRUE)   //if user is not login redirected baack to
 
 ?>
 
-<div class="panel-header panel-header-lg">
-  <canvas id="bigDashboardChart"></canvas>
-</div>
-  <div class="content">
-    <div class="row">
-      <div class="col-lg-4">
-        <div class="card card-chart">
-          <div class="card-header" align="center">
-            <h5 class="card-category"># Registered Mobilasers</h5><br>
-            <h1 class="card-title" style="font-size: 50px"><?php echo $numOfRegisteredMobilisers ?></h1>
-          </div>
-          <div class="card-body">
-            <div class="chart-area">
-              <canvas id="lineChartExample"></canvas>
-            </div>
-          </div>
-          <div class="card-footer">
-            <div class="stats">
-              <a href="javascript:location.reload(true)">
-                  <i class="now-ui-icons arrows-1_refresh-69"></i> Just Updated
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="card card-chart">
-          <div class="card-header" align="center">
-            <h5 class="card-category"># Completed Surveys</h5><br>
-            <h1 class="card-title" style="font-size: 50px"><?php echo $numOfCompletedSurveys ?></h1>
-          </div>
-          <div class="card-body">
-            <div class="chart-area">
-              <canvas id="lineChartExampleWithNumbersAndGrid"></canvas>
-            </div>
-          </div>
-          <div class="card-footer">
-            <div class="stats">
-              <a href="javascript:location.reload(true)" style="color: green">
-                <i class="now-ui-icons arrows-1_refresh-69"></i> Just Updated
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="card card-chart">
-          <div class="card-header"  align="center">
-            <h5 class="card-category"># Sector Represented</h5><br>
-            <h1 class="card-title" style="font-size: 50px">18</h1>
-          </div>
-          <div class="card-body">
-            <div class="chart-area">
-              <canvas id="barChartSimpleGradientsNumbers"></canvas>
-            </div>
-          </div>
-          <div class="card-footer">
-            <div class="stats">
-              <a href="javascript:location.reload(true)" style="color: blue">
-                <i class="now-ui-icons arrows-1_refresh-69"></i> Just Updated
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="panel-header panel-header-sm">  
+  </div>
+  <br><br><br>
+  <div class="content"> <p><a href="dashboard.php"> DASHBOARD </a> > MOBILISERS </p>
 
 
   <div class="row" >
@@ -90,23 +28,23 @@ if ($_SESSION['loggedin']  != TRUE)   //if user is not login redirected baack to
           <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-12 card-gradient-md-border border-right-info border-right-lighten-3" align="center">
                 <br>
-                Surveys Across Provinces:
+                Registered Mobilisers Across Provinces:
                 <br><br>
               <div class="card-body text-center">
-                <a target="_blank" href="survey-details.php?id=all&num=<?php echo $numOfCompletedSurveys ?> ">
+                <a target="_blank" href="mobiliser-personal-details.php?id=all">
                     <h1 class="display-4" style="color: green">
-                        <?php echo $numOfCompletedSurveys;?>
+                        <?php echo $numOfRegisteredMobilisers;?>
                     </h1>
                 </a>
-                <span style="color: green">#Surveys Completed Today</span>
+                <span style="color: green"># Registered Mobilisers </span>
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 card-gradient-md-border border-right-info border-right-lighten-3">
                 <br><br>
               <div class="card-body text-center">
-                <a target="_blank" href="survey-details.php?id=gauteng&num=<?php echo $gautengCompletedSurveys ?> ">
+                <a target="_blank" href="mobiliser-personal-details.php?id=gauteng">
                     <h1 class="display-5">
-                        <?php echo $gautengCompletedSurveys; ?>
+                        <?php echo $gautengMobilisers; ?>
                     </h1>
                 </a>
                 <span># in Gauteng</span>
@@ -115,9 +53,9 @@ if ($_SESSION['loggedin']  != TRUE)   //if user is not login redirected baack to
             <div class="col-lg-3 col-md-6 col-sm-12 card-gradient-md-border border-right-info border-right-lighten-3">
                 <br><br>
               <div class="card-body text-center">
-                <a target="_blank" href="survey-details.php?id=freestate&num=<?php echo $freeStateCompletedSurveys ?> ">
+                <a target="_blank" href="mobiliser-personal-details.php?id=freestate">
                     <h1 class="display-5">
-                        <?php echo $freeStateCompletedSurveys; ?>
+                        <?php echo $freeStateMobilisers; ?>
                     </h1>
                 </a>
                 <span># in Free State</span>
@@ -126,9 +64,9 @@ if ($_SESSION['loggedin']  != TRUE)   //if user is not login redirected baack to
             <div class="col-lg-3 col-md-6 col-sm-12 card-gradient-md-border">
                 <br><br>
               <div class="card-body text-center">
-                <a target="_blank" href="survey-details.php?id=northwest&num=<?php echo $northWestCompletedSurveys ?> ">
+                <a target="_blank" href="mobiliser-personal-details.php?id=northwest">
                     <h1 class="display-5" >
-                        <?php echo $northWestCompletedSurveys; ?>
+                        <?php echo $northWestMobilisers; ?>
                     </h1>
                 </a>
                 <span># in North West</span>
@@ -146,9 +84,9 @@ if ($_SESSION['loggedin']  != TRUE)   //if user is not login redirected baack to
             <div class="col-lg-3 col-md-6 col-sm-12 card-gradient-md-border">
             <br>
               <div class="card-body text-center">
-                <a target="_blank" href="survey-details.php?id=mpumalanga&num=<?php echo $mpumalangaCompletedSurveys ?> ">
+                <a target="_blank" href="mobiliser-personal-details.php?id=mpumalanga">
                     <h1 class="display-5">
-                        <?php echo $mpumalangaCompletedSurveys; ?>
+                        <?php echo $mpumalangaMobilisers; ?>
                     </h1>
                 </a>
                 <span># in Mpumalanga</span>
@@ -157,9 +95,9 @@ if ($_SESSION['loggedin']  != TRUE)   //if user is not login redirected baack to
             <div class="col-lg-3 col-md-6 col-sm-12 card-gradient-md-border">
             <br>               
               <div class="card-body text-center">
-                <a target="_blank" href="survey-details.php?id=limpopo&num=<?php echo $limpopoCompletedSurveys ?> ">
+                <a target="_blank" href="mobiliser-personal-details.php?id=limpopo">
                     <h1 class="display-5">
-                        <?php echo $limpopoCompletedSurveys; ?>
+                        <?php echo $limpopoMobilisers; ?>
                     </h1>
                 </a>
                 <span># in Limpopo</span>
@@ -168,9 +106,9 @@ if ($_SESSION['loggedin']  != TRUE)   //if user is not login redirected baack to
             <div class="col-lg-3 col-md-6 col-sm-12 card-gradient-md-border">
             <br>
               <div class="card-body text-center">
-                <a target="_blank" href="survey-details.php?id=kzn&num=<?php echo $kznCompletedSurveys ?> ">
+                <a target="_blank" href="mobiliser-personal-details.php?id=kzn">
                     <h1 class="display-5">
-                        <?php echo $kznCompletedSurveys; ?>
+                        <?php echo $kznMobilisers; ?>
                     </h1>
                 </a>
                 <span># in KwaZulu Natal</span>
@@ -187,9 +125,9 @@ if ($_SESSION['loggedin']  != TRUE)   //if user is not login redirected baack to
             <div class="col-lg-3 col-md-6 col-sm-12 card-gradient-md-border">
             <br><br>
               <div class="card-body text-center">
-                <a target="_blank" href="survey-details.php?id=northcape&num=<?php echo $northernCapeCompletedSurveys ?> ">
+                <a target="_blank" href="mobiliser-personal-details.php?id=northcape">
                     <h1 class="display-5">
-                        <?php echo $northernCapeCompletedSurveys; ?>
+                        <?php echo $northernCapeMobilisers; ?>
                     </h1>
                 </a>
                 <span># in Northern Cape</span>
@@ -198,9 +136,9 @@ if ($_SESSION['loggedin']  != TRUE)   //if user is not login redirected baack to
             <div class="col-lg-3 col-md-6 col-sm-12 card-gradient-md-border">
             <br><br>
               <div class="card-body text-center">
-                <a target="_blank" href="survey-details.php?id=eastcape&num=<?php echo $easternCapeCompletedSurveys ?> ">
+                <a target="_blank" href="mobiliser-personal-details.php?id=eastcape">
                     <h1 class="display-5">
-                        <?php echo $easternCapeCompletedSurveys; ?>
+                        <?php echo $easternCapeMobilisers; ?>
                     </h1>
                 </a>
                 <span># in Eastern Cape</span>
@@ -209,9 +147,9 @@ if ($_SESSION['loggedin']  != TRUE)   //if user is not login redirected baack to
             <div class="col-lg-3 col-md-6 col-sm-12 card-gradient-md-border">
             <br><br>
               <div class="card-body text-center">
-                <a target="_blank" href="survey-details.php?id=westcape&num=<?php echo $westernCapeCompletedSurveys ?> ">
+                <a target="_blank" href="mobiliser-personal-details.php?id=westcape">
                     <h1 class="display-5">
-                        <?php echo $westernCapeCompletedSurveys; ?>
+                        <?php echo $westernCapeMobilisers; ?>
                     </h1>
                 </a>
                 <span># in Western Cape</span>
@@ -295,7 +233,8 @@ if ($_SESSION['loggedin']  != TRUE)   //if user is not login redirected baack to
         </div>
       </div>
     </div>
-  </div>
+
+
   <footer class="footer">
     <div class=" container-fluid ">
       <nav>
@@ -311,13 +250,14 @@ if ($_SESSION['loggedin']  != TRUE)   //if user is not login redirected baack to
             </a>
           </li>
           <li>
-            <a href="https://support.sanaccsf.org.za/app/admin/">
+            <a target="_blank" href="https://support.sanaccsf.org.za/app/admin/">
               Support Tickets
             </a>
           </li>
         </ul>
       </nav>
     </div>
+  </div>
   </footer>
   </div>
   </div>
