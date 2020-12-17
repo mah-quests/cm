@@ -15,72 +15,10 @@ if ($_SESSION['loggedin']  != TRUE)   //if user is not login redirected baack to
 
 ?>
 
-<div class="panel-header panel-header-lg">
-  <canvas id="bigDashboardChart"></canvas>
-</div>
-  <div class="content">
-    <div class="row">
-      <div class="col-lg-4">
-        <div class="card card-chart">
-          <div class="card-header" align="center">
-            <h5 class="card-category"># Registered Mobilasers</h5><br>
-            <h1 class="card-title" style="font-size: 50px"><?php echo $numOfRegisteredMobilisers ?></h1>
-          </div>
-          <div class="card-body">
-            <div class="chart-area">
-              <canvas id="lineChartExample"></canvas>
-            </div>
-          </div>
-          <div class="card-footer">
-            <div class="stats">
-              <a href="javascript:location.reload(true)">
-                  <i class="now-ui-icons arrows-1_refresh-69"></i> Just Updated
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="card card-chart">
-          <div class="card-header" align="center">
-            <h5 class="card-category"># Completed Surveys</h5><br>
-            <h1 class="card-title" style="font-size: 50px"><?php echo $numOfCompletedSurveys ?></h1>
-          </div>
-          <div class="card-body">
-            <div class="chart-area">
-              <canvas id="lineChartExampleWithNumbersAndGrid"></canvas>
-            </div>
-          </div>
-          <div class="card-footer">
-            <div class="stats">
-              <a href="javascript:location.reload(true)" style="color: green">
-                <i class="now-ui-icons arrows-1_refresh-69"></i> Just Updated
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="card card-chart">
-          <div class="card-header"  align="center">
-            <h5 class="card-category"># Sector Represented</h5><br>
-            <h1 class="card-title" style="font-size: 50px">18</h1>
-          </div>
-          <div class="card-body">
-            <div class="chart-area">
-              <canvas id="barChartSimpleGradientsNumbers"></canvas>
-            </div>
-          </div>
-          <div class="card-footer">
-            <div class="stats">
-              <a href="javascript:location.reload(true)" style="color: blue">
-                <i class="now-ui-icons arrows-1_refresh-69"></i> Just Updated
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="panel-header panel-header-sm">  
+  </div>
+  <br><br><br>
+  <div class="content"> <p><a href="dashboard.php"> DASHBOARD </a> > SURVEYS </p>
 
 
   <div class="row" >
@@ -295,7 +233,8 @@ if ($_SESSION['loggedin']  != TRUE)   //if user is not login redirected baack to
         </div>
       </div>
     </div>
-  </div>
+
+
   <footer class="footer">
     <div class=" container-fluid ">
       <nav>
@@ -311,13 +250,14 @@ if ($_SESSION['loggedin']  != TRUE)   //if user is not login redirected baack to
             </a>
           </li>
           <li>
-            <a href="https://support.sanaccsf.org.za/app/admin/">
+            <a target="_blank" href="https://support.sanaccsf.org.za/app/admin/">
               Support Tickets
             </a>
           </li>
         </ul>
       </nav>
     </div>
+  </div>
   </footer>
   </div>
   </div>

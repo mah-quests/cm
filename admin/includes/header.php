@@ -39,31 +39,37 @@
             </li>
             <li>
               <a href="live-dash.php">
-                <i class="now-ui-icons education_atom"></i>
+                <i class="now-ui-icons business_chart-bar-32"></i>
                 <p>Live Data</p>
               </a>
             </li>
             <li>
-              <a href="#">
-                <i class="now-ui-icons location_map-big"></i>
+              <a href="sector-dash.php">
+                <i class="now-ui-icons education_glasses"></i>
                 <p>Sectors</p>
               </a>
             </li>
             <li>
-              <a href="#">
-                <i class="now-ui-icons ui-1_bell-53"></i>
+              <a href="mobiliser-dash.php">
+                <i class="now-ui-icons sport_user-run"></i>
                 <p>Mobilasers</p>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="surveys-dash.php">
                 <i class="now-ui-icons text_caps-small"></i>
                 <p>Surveys</p>
               </a>
             </li>
+            <li>
+              <a href="data-analytics.php">
+                <i class="now-ui-icons business_chart-pie-36"></i>
+                <p>Data Analytics</p>
+              </a>
+            </li>            
             <li class="active-pro">
-              <a href="#">
-                <i class="now-ui-icons arrows-1_cloud-download-93"></i>
+              <a href="admin-logins.php">
+                <i class="now-ui-icons design_bullet-list-67"></i>
                 <p>Admin Logins</p>
               </a>
             </li>
@@ -126,6 +132,12 @@
             </div>
           </div>
         </nav>
+
+<script>
+  function goBack() {
+    window.history.back();
+  }  
+</script>
 
 
 <script>
@@ -354,7 +366,7 @@ demo = {
     var myChart = new Chart(ctx, {
       type: 'line',
       data: {
-        labels: ["NOV'20", "DEC'20", "JAN'21", "FEB'21", "MAR'21", "APR'21", "MAY'21", "JUN'21", "JUL'21", "AUG'21", "SEP'21", "OCT'21"],
+        labels: ["OCT'20", "NOV'20", "DEC'20", "JAN'21", "FEB'21", "MAR'21", "APR'21", "MAY'21", "JUN'21", "JUL'21", "AUG'21", "SEP'21", "OCT'21"],
         datasets: [{
           label: "Monthly Peformances",
           borderColor: chartColor,
@@ -369,7 +381,7 @@ demo = {
           fill: true,
           backgroundColor: gradientFill,
           borderWidth: 2,
-          data: [50, 150, 100, 190, 130, 90, 150, 160, 120, 140, 190, 95]
+          data: [<?php echo $numOfSurveysOct20 ?>, <?php echo $numOfSurveysNov20 ?>, <?php echo $numOfSurveysDec20 ?>, <?php echo $numOfSurveysJan21 ?>, <?php echo $numOfSurveysFeb21 ?>, <?php echo $numOfSurveysMar21 ?>, <?php echo $numOfSurveysApr21 ?>, <?php echo $numOfSurveysMay21 ?>, <?php echo $numOfSurveysJun21 ?>, <?php echo $numOfSurveysJul21 ?>, <?php echo $numOfSurveysAug21 ?>, <?php echo $numOfSurveysSep21 ?>, <?php echo $numOfSurveysOct21 ?>]
         }]
       },
       options: {
@@ -448,7 +460,7 @@ demo = {
       type: 'line',
       responsive: true,
       data: {
-        labels: ["today", "yesterday", "2 days ago", "3 days ago", "4 days ago", "5 days ago", "6 days ago", "1 week ago", "2 weeks ago", "3 weeks ago", "1 month ago", "All"],
+        labels: ["today", "yesterday", "2 days ago", "3 days ago", "4 days ago", "5 days ago", "6 days ago", "7 days ago", "8 days ago", "9 days ago", "10 days ago", "11 days ago"],
         datasets: [{
           label: "Active Users",
           borderColor: "#f96332",
@@ -461,7 +473,7 @@ demo = {
           fill: true,
           backgroundColor: gradientFill,
           borderWidth: 2,
-          data: [542, 480, 430, 550, 530, 453, 380, 434, 568, 610, 700, 630]
+          data: [<?php echo $numOfRegisteredMobilisersToday ?>, <?php echo $numOfRegisteredMobilisersYesterday ?>, <?php echo $numOfRegisteredMobilisers2DaysAgo ?>, <?php echo $numOfRegisteredMobilisers3DaysAgo ?>, <?php echo $numOfRegisteredMobilisers4DaysAgo ?>, <?php echo $numOfRegisteredMobilisers5DaysAgo ?>, <?php echo $numOfRegisteredMobilisers6DaysAgo ?>, <?php echo $numOfRegisteredMobilisers7DaysAgo ?>, <?php echo $numOfRegisteredMobilisers8DaysAgo ?>, <?php echo $numOfRegisteredMobilisers9DaysAgo ?>, <?php echo $numOfRegisteredMobilisers10DaysAgo ?>, <?php echo $numOfRegisteredMobilisers11DaysAgo ?>]
         }]
       },
       options: gradientChartOptionsConfiguration
@@ -495,7 +507,7 @@ demo = {
           fill: true,
           backgroundColor: gradientFill,
           borderWidth: 2,
-          data: [40, 500, 650, 700, 1200, 1250, 1300, 1900]
+          data: [<?php echo $numOfCompletedSurveysToday ?>, <?php echo $numOfCompletedSurveyYesterday ?>, <?php echo $numOfCompletedSurvey2DaysAgo ?>, <?php echo $numOfCompletedSurvey3DaysAgo ?>, <?php echo $numOfCompletedSurvey4DaysAgo ?>, <?php echo $numOfCompletedSurvey5DaysAgo ?>, <?php echo $numOfCompletedSurvey6DaysAgo ?>, <?php echo $numOfCompletedSurvey7DaysAgo ?>]
         }]
       },
       options: gradientChartOptionsConfigurationWithNumbersAndGrid
@@ -523,7 +535,7 @@ demo = {
           pointRadius: 4,
           fill: true,
           borderWidth: 1,
-          data: [80, 99, 86, 96, 123, 85, 100, 75, 88, 90, 123, 155]
+          data: [<?php echo $sacMobilisers ?>, <?php echo $humanRightsMobilisers ?>, <?php echo $traditionalLeadersMobilisers ?>, <?php echo $plhivMobilisers ?>, <?php echo $faithMobilisers ?>, <?php echo $higerEducationMobilisers ?>, <?php echo $sexWorkerMobilisers ?>, <?php echo $labourMobilisers ?>, <?php echo $youthMobilisers ?>, <?php echo $peopleWithDisabilitiesMobilisers ?>, <?php echo $lgbtiMobilisers ?>, <?php echo $npoMobilisers ?>]
         }]
       },
       options: {
