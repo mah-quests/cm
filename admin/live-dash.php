@@ -57,7 +57,7 @@ if ($_SESSION['loggedin']  != TRUE)   //if user is not login redirected baack to
                 Surveys Across Provinces:
                 <br><br>
               <div class="card-body text-center">
-                <a href="#">
+                <a target="_blank" href="survey-details.php?id=todayall&num=<?php echo $numOfCompletedSurveysToday ?> ">
                     <h1 class="display-4" style="color: green">
                         <?php echo $numOfCompletedSurveysToday; ?>
                     </h1>
@@ -68,7 +68,7 @@ if ($_SESSION['loggedin']  != TRUE)   //if user is not login redirected baack to
             <div class="col-lg-3 col-md-6 col-sm-12 card-gradient-md-border border-right-info border-right-lighten-3">
                 <br><br>
               <div class="card-body text-center">
-                <a href="#">
+                <a target="_blank" href="survey-details.php?id=todaygauteng&num=<?php echo $gautengCompletedSurveysToday ?> ">
                     <h1 class="display-5">
                         <?php echo $gautengCompletedSurveysToday; ?>
                     </h1>
@@ -79,7 +79,7 @@ if ($_SESSION['loggedin']  != TRUE)   //if user is not login redirected baack to
             <div class="col-lg-3 col-md-6 col-sm-12 card-gradient-md-border border-right-info border-right-lighten-3">
                 <br><br>
               <div class="card-body text-center">
-                <a href="#">
+                <a target="_blank" href="survey-details.php?id=todayfreestate&num=<?php echo $freeStateCompletedSurveysToday ?> ">
                     <h1 class="display-5">
                         <?php echo $freeStateCompletedSurveysToday; ?>
                     </h1>
@@ -90,7 +90,7 @@ if ($_SESSION['loggedin']  != TRUE)   //if user is not login redirected baack to
             <div class="col-lg-3 col-md-6 col-sm-12 card-gradient-md-border">
                 <br><br>
               <div class="card-body text-center">
-                <a href="#">
+                <a target="_blank" href="survey-details.php?id=todaynorthwest&num=<?php echo $northWestCompletedSurveysToday ?> ">
                     <h1 class="display-5" >
                         <?php echo $northWestCompletedSurveysToday; ?>
                     </h1>
@@ -110,7 +110,7 @@ if ($_SESSION['loggedin']  != TRUE)   //if user is not login redirected baack to
             <div class="col-lg-3 col-md-6 col-sm-12 card-gradient-md-border">
             <br>
               <div class="card-body text-center">
-                <a href="#">
+                <a target="_blank" href="survey-details.php?id=todaympumalanga&num=<?php echo $mpumalangaCompletedSurveysToday ?> ">
                     <h1 class="display-5">
                         <?php echo $mpumalangaCompletedSurveysToday; ?>
                     </h1>
@@ -121,7 +121,7 @@ if ($_SESSION['loggedin']  != TRUE)   //if user is not login redirected baack to
             <div class="col-lg-3 col-md-6 col-sm-12 card-gradient-md-border">
             <br>               
               <div class="card-body text-center">
-                <a href="#">
+                <a target="_blank" href="survey-details.php?id=todaylimpopo&num=<?php echo $limpopoCompletedSurveysToday ?> ">
                     <h1 class="display-5">
                         <?php echo $limpopoCompletedSurveysToday; ?>
                     </h1>
@@ -132,7 +132,7 @@ if ($_SESSION['loggedin']  != TRUE)   //if user is not login redirected baack to
             <div class="col-lg-3 col-md-6 col-sm-12 card-gradient-md-border">
             <br>
               <div class="card-body text-center">
-                <a href="#">
+                <a target="_blank" href="survey-details.php?id=todaykzn&num=<?php echo $kznCompletedSurveysToday ?> ">
                     <h1 class="display-5">
                         <?php echo $kznCompletedSurveysToday; ?>
                     </h1>
@@ -151,7 +151,7 @@ if ($_SESSION['loggedin']  != TRUE)   //if user is not login redirected baack to
             <div class="col-lg-3 col-md-6 col-sm-12 card-gradient-md-border">
             <br><br>
               <div class="card-body text-center">
-                <a href="#">
+                <a target="_blank" href="survey-details.php?id=todaynorthcape&num=<?php echo $northernCapeCompletedSurveysToday ?> ">
                     <h1 class="display-5">
                         <?php echo $northernCapeCompletedSurveysToday; ?>
                     </h1>
@@ -162,7 +162,7 @@ if ($_SESSION['loggedin']  != TRUE)   //if user is not login redirected baack to
             <div class="col-lg-3 col-md-6 col-sm-12 card-gradient-md-border">
             <br><br>
               <div class="card-body text-center">
-                <a href="#">
+                <a target="_blank" href="survey-details.php?id=todayeastcape&num=<?php echo $easternCapeCompletedSurveysToday ?> ">
                     <h1 class="display-5">
                         <?php echo $easternCapeCompletedSurveysToday; ?>
                     </h1>
@@ -173,7 +173,7 @@ if ($_SESSION['loggedin']  != TRUE)   //if user is not login redirected baack to
             <div class="col-lg-3 col-md-6 col-sm-12 card-gradient-md-border">
             <br><br>
               <div class="card-body text-center">
-                <a href="#">
+                <a target="_blank" href="survey-details.php?id=todaywestcape&num=<?php echo $westernCapeCompletedSurveysToday ?> ">
                     <h1 class="display-5">
                         <?php echo $westernCapeCompletedSurveysToday; ?>
                     </h1>
@@ -220,7 +220,7 @@ if ($_SESSION['loggedin']  != TRUE)   //if user is not login redirected baack to
                 <tbody>
 
         <?php
-            $sql="SELECT mobiliser_tbl.first_name as first_name, mobiliser_tbl.surname as surname, mobiliser_tbl.net_structure as net_structure, mobiliser_tbl.province as province, mobiliser_tbl.municipality as municipality, mobiliser_tbl.cellnumber as cellnumber, count(summary_tbl.mobiliser_id) as no_of_surveys FROM summary_tbl INNER JOIN mobiliser_tbl ON summary_tbl.mobiliser_id=mobiliser_tbl.mobiliser_id where date(created_date)=CURDATE() group by summary_tbl.mobiliser_id order by no_of_surveys desc LIMIT 15";
+            $sql="SELECT mobiliser_tbl.mobiliser_id as mob_id, mobiliser_tbl.first_name as first_name, mobiliser_tbl.surname as surname, mobiliser_tbl.net_structure as net_structure, mobiliser_tbl.province as province, mobiliser_tbl.municipality as municipality, mobiliser_tbl.cellnumber as cellnumber, count(summary_tbl.mobiliser_id) as no_of_surveys FROM summary_tbl INNER JOIN mobiliser_tbl ON summary_tbl.mobiliser_id=mobiliser_tbl.mobiliser_id where date(completed_datetime)=CURDATE() group by summary_tbl.mobiliser_id order by no_of_surveys desc";
             $query=mysqli_query($db,$sql);
 
                 if(!mysqli_num_rows($query) > 0 )
@@ -239,7 +239,11 @@ if ($_SESSION['loggedin']  != TRUE)   //if user is not login redirected baack to
                             <td>'.$rows['net_structure'].'</td>
                             <td>'.$rows['cellnumber'].'</td>
                             <td>'.$rows['municipality'].', '.$rows['province'].' </td>
-                            <td align="right">'.$rows['no_of_surveys'].'</td>
+                            <td align="right">
+                              <a href="mobiliser-survey-details.php?mob_id='.$rows['mob_id'].'&num='.$rows['no_of_surveys'].' ">
+                                  '.$rows['no_of_surveys'].'
+                              </a>
+                            </td>
                             </tr>';
 
                     }   
@@ -271,7 +275,7 @@ if ($_SESSION['loggedin']  != TRUE)   //if user is not login redirected baack to
             </a>
           </li>
           <li>
-            <a href="https://support.sanaccsf.org.za/app/admin/">
+            <a target="_blank" href="https://support.sanaccsf.org.za/app/admin/">
               Support Tickets
             </a>
           </li>
