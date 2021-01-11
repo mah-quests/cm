@@ -3,7 +3,7 @@
 	$USERNAME 		= "app"; 						//username
 	$PASSWORD 		= "app"; 						//password
 	$DATABASENAME 	= "app";  						//database
-	$URLBASE 		= "http://localhost/app/dev";  		//URL base
+	$URLBASE 		= "http://localhost/app";  		//URL base
 
 	$APIBASE 		= "$URLBASE/api"				//API
 

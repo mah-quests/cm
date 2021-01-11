@@ -3,14 +3,14 @@
     header("Content-Type: application/json; charset=UTF-8");
     
     include_once 'config/database.php';
-    include_once 'class/employees.php';
+    include_once 'class/mobilisers.php';
 
     $database = new Database();
     $db = $database->getConnection();
 
-    $items = new Employee($db);
+    $items = new mobiliser($db);
 
-    $stmt = $items->getEmployees();
+    $stmt = $items->getMobilisers();
     $itemCount = $stmt->rowCount();
 
 
@@ -18,24 +18,41 @@
 
     if($itemCount > 0){
         
-        $employeeArr = array();
-        $employeeArr["body"] = array();
-        $employeeArr["itemCount"] = $itemCount;
+        $mobiliserArr = array();
+        $mobiliserArr["body"] = array();
+        $mobiliserArr["itemCount"] = $itemCount;
 
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
             extract($row);
             $e = array(
-                "id" => $id,
-                "name" => $name,
+                "mobiliser_id" => $mobiliser_id,
+                "net_structure" => $net_structure,
+                "first_name" => $first_name,
+                "surname" => $surname,
+                "date_of_birth" => $date_of_birth,
+                "cellnumber" => $cellnumber,
                 "email" => $email,
-                "age" => $age,
-                "designation" => $designation,
-                "created" => $created
+                "race" => $race,
+                "religion" => $religion,
+                "sex" => $sex,
+                "gender" => $gender,
+                "gender_id" => $gender_id,
+                "pronouns" => $pronouns,
+                "mobaliser_address" => $mobaliser_address,
+                "province" => $province,
+                "district" => $district,
+                "municipality" => $municipality,
+                "alternate_person" => $alternate_person,
+                "alternate_number" => $alternate_number,
+                "disable" => $disable,
+                "disability_type" => $disability_type,
+                "school_level" => $school_level,
+                "created_date" => $created_date                                                
             );
 
-            array_push($employeeArr["body"], $e);
+            array_push($mobiliserArr["body"], $e);
         }
-        echo json_encode($employeeArr);
+        echo json_encode($mobiliserArr);
     }
 
     else{

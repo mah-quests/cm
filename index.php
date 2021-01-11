@@ -84,21 +84,28 @@
                     <li class="u-nav-item">
                       <a class="u-button-style u-nav-link" href="login.php">Logout</a>
                     </li>
+                    <li class="u-nav-item">
+                      <a class="u-button-style u-nav-link" href="register.php">Register</a>
+                    </li>
                   </ul>
                 </div>
               </li>
+            <li class="u-nav-item">
+              <a class="u-button-style u-nav-link" href="report.php">Progress
+              </a>
+            </li>
 
               <?php } else { ?>
 
               <li class="u-nav-item">
-                <a class="u-button-style u-nav-link">Mobalisers</a>
+                <a class="u-button-style u-nav-link">Mobilisers</a>
                 <div class="u-nav-popup">
                   <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-4">
                     <li class="u-nav-item">
-                      <a class="u-button-style u-nav-link" href="register.php">Register</a>
+                      <a class="u-button-style u-nav-link" href="login.php">Login</a>
                     </li>
                     <li class="u-nav-item">
-                      <a class="u-button-style u-nav-link" href="login.php">Login</a>
+                      <a class="u-button-style u-nav-link" href="register.php">Register</a>
                     </li>
                   </ul>
                 </div>
@@ -122,26 +129,63 @@
                   </a>
                 </li>
                 <li class="u-nav-item">
-                  <a class="u-button-style u-nav-link" href="about.php">About Communities Matter
+                  <a class="u-button-style u-nav-link" href="about.php">About Us
                   </a>
                 </li>
                 <li class="u-nav-item">
-                  <a class="u-button-style u-nav-link" href="Survey.html">Survey
+                  <a class="u-button-style u-nav-link" href="survey.php">Survey
                 </a>
               </li>
+
+              <?php
+
+              include("connect/connectDB.php"); // connection to db
+              error_reporting(0);
+              session_start();
+
+              if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
+                {
+              ?>
+
               <li class="u-nav-item">
                 <a class="u-button-style u-nav-link">Mobalisers</a>
                 <div class="u-nav-popup">
                   <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-4">
                     <li class="u-nav-item">
-                      <a class="u-button-style u-nav-link" href="register.php">Register</a>
+                      <a class="u-button-style u-nav-link" href="profile.php">Profile</a>
                     </li>
                     <li class="u-nav-item">
-                      <a class="u-button-style u-nav-link" href="login.php">Login</a>
+                      <a class="u-button-style u-nav-link" href="logout.php">Logout</a>
+                    </li>
+                    <li class="u-nav-item">
+                      <a class="u-button-style u-nav-link" href="register.php">Register</a>
                     </li>
                   </ul>
                 </div>
               </li>
+              <li class="u-nav-item">
+                <a class="u-button-style u-nav-link" href="report.php">Progress
+                </a>
+              </li>
+
+              <?php } else { ?>
+
+              <li class="u-nav-item">
+                <a class="u-button-style u-nav-link">Mobilisers</a>
+                <div class="u-nav-popup">
+                  <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-4">
+                    <li class="u-nav-item">
+                      <a class="u-button-style u-nav-link" href="login.php">Login</a>
+                    </li>
+                    <li class="u-nav-item">
+                      <a class="u-button-style u-nav-link" href="register.php">Register</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <?php } ?>
+
               <li class="u-nav-item">
                 <a class="u-button-style u-nav-link" href="contact.php">Contact Us
                 </a>

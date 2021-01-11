@@ -869,19 +869,19 @@ include_once 'includes/header.php';
                 <label for="access_infomation" class="u-label"> Where are you accessing information on workplace regulations under Covid-19?</label>
                 <select id="access_infomation" name="access_infomation" class="u-grey-5 u-input u-input-rectangle">
                   <option selected value=""></option>
-                  <option  value="Yes">Work Office</option>
-                  <option value="No">My Manager/ Boss</option>
-                  <option value="Some">E-mail</option>
-                  <option value="Yes">Social Media</option>
-                  <option value="No">Billboards</option>
+                  <option value="Work Office">Work Office</option>
+                  <option value="My Manager">My Manager/ Boss</option>
+                  <option value="E-mail">E-mail</option>
+                  <option value="Social Media">Social Media</option>
+                  <option value="Billboards">Billboards</option>
                   <option value="Some">Some</option>
-                  <option value="Yes">Internet Search</option>
-                  <option value="No">Printed Media</option>
-                  <option value="Some">SMS</option>
-                  <option value="Yes">Radio and TV</option>
-                  <option value="No">Municipalities</option>
-                  <option value="No">Neighbourhood Committee</option>
-                  <option value="Some">Local NPOs</option>
+                  <option value="Internet Search">Internet Search</option>
+                  <option value="Printed Media">Printed Media</option>
+                  <option value="SMS">SMS</option>
+                  <option value="Radio and TV">Radio and TV</option>
+                  <option value="Municipalities">Municipalities</option>
+                  <option value="Neighbourhood Committee">Neighbourhood Committee</option>
+                  <option value="Local NPOs">Local NPOs</option>
                 </select>
               </div>
             </div>
@@ -909,8 +909,8 @@ include_once 'includes/header.php';
                 <label for="public_transport" class="u-label">Are there safety measures that you can see?</label>
                 <select id="public_transport" name="public_transport" class="u-grey-5 u-input u-input-rectangle">
                     <option selected value=""></option>
-                  <option  value="sanitised-at-entry">passengers sanitised at entry,</option>
-                  <option value="wearing-masks">are passengers wearing masks</option>
+                  <option  value="sanitised-at-entry">passengers sanitised at entry</option>
+                  <option value="wearing-masks"> passengers wearing masks</option>
                   <option value="driver-wearing-mask">Is the driver wearing a mask
                     throughout the trip?</option>
                   <option value="window-open">Is there a window open to allow for

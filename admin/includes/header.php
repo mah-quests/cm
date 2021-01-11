@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <!-- <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png"> -->
-  <link rel="icon" type="image/png" href="assets/img/favico.png">
+  <link rel="icon" href="../images/SANACicon.png" type="image/png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
     Communities Matter Admin
@@ -55,12 +55,24 @@
                 <p>Mobilasers</p>
               </a>
             </li>
+            <li class="active-pro">
+              <a href="dynamic-mobiliser-report.php">
+                <i class="now-ui-icons education_paper"></i>
+                <p>Mobiliser Reports</p>
+              </a>
+            </li> 
+            <li class="active-pro">
+              <a href="performance-report.php">
+                <i class="now-ui-icons business_chart-bar-32"></i>
+                <p>Performance Reports</p>
+              </a>
+            </li> 
             <li>
               <a href="surveys-dash.php">
                 <i class="now-ui-icons text_caps-small"></i>
                 <p>Surveys</p>
               </a>
-            </li>
+            </li>                       
             <li>
               <a href="data-analytics.php">
                 <i class="now-ui-icons business_chart-pie-36"></i>
@@ -228,7 +240,7 @@ demo = {
       type: 'line',
       responsive: true,
       data: {
-        labels: ["today", "yesterday", "2 days ago", "3 days ago", "4 days ago", "5 days ago", "6 days ago", "1 week ago", "2 weeks ago", "3 weeks ago", "1 month ago", "All"],
+        labels: ["today", "yesterday", "2 days ago", "3 days ago", "4 days ago", "5 days ago", "6 days ago", "7 days ago", "8 days ago", "9 days ago", "10 days ago", "11 days ago"],
         datasets: [{
           label: "Active Users",
           borderColor: "#f96332",
@@ -241,7 +253,7 @@ demo = {
           fill: true,
           backgroundColor: gradientFill,
           borderWidth: 2,
-          data: [542, 480, 430, 550, 530, 453, 380, 434, 568, 610, 700, 630]
+          data: [<?php echo $numOfRegisteredMobilisersToday ?>, <?php echo $numOfRegisteredMobilisersYesterday ?>, <?php echo $numOfRegisteredMobilisers2DaysAgo ?>, <?php echo $numOfRegisteredMobilisers3DaysAgo ?>, <?php echo $numOfRegisteredMobilisers4DaysAgo ?>, <?php echo $numOfRegisteredMobilisers5DaysAgo ?>, <?php echo $numOfRegisteredMobilisers6DaysAgo ?>, <?php echo $numOfRegisteredMobilisers7DaysAgo ?>, <?php echo $numOfRegisteredMobilisers8DaysAgo ?>, <?php echo $numOfRegisteredMobilisers9DaysAgo ?>, <?php echo $numOfRegisteredMobilisers10DaysAgo ?>, <?php echo $numOfRegisteredMobilisers11DaysAgo ?>]
         }]
       },
       options: gradientChartOptionsConfiguration

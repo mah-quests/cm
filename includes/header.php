@@ -22,10 +22,12 @@ session_start();
     <script class="u-script" type="text/javascript" src="assets/jquery2.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="assets/nicepage.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="assets/nicepage2.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="assets/template-jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="assets/template.js" defer=""></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <meta name="generator" content="Nicepage 2.30.1, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-    
+
     <script type="application/ld+json">{
     "@context": "http://schema.org",
     "@type": "Organization",
@@ -60,7 +62,7 @@ session_start();
           document.getElementById("need_support_services").style.visibility = 'visible';
         }
       }
-  
+
 
       function showHideHospitalized() {
         var noOption = document.getElementById("which_hospital").value;
@@ -106,12 +108,12 @@ session_start();
           jQuery('#support_services').show();
           document.getElementById("support_services").style.visibility = 'visible';
           jQuery('#need_support_services').show();
-          document.getElementById("need_support_services").style.visibility = 'visible';          
+          document.getElementById("need_support_services").style.visibility = 'visible';
         } else {
           jQuery('#support_services').show();
           document.getElementById("support_services").style.visibility = 'visible';
           jQuery('#need_support_services').show();
-          document.getElementById("need_support_services").style.visibility = 'visible';          
+          document.getElementById("need_support_services").style.visibility = 'visible';
         }
       }
 
@@ -308,27 +310,27 @@ session_start();
         if (noOption == "Employed (part time)") {
           jQuery('#employment_changed_info').show();
           document.getElementById("employment_changed_info").style.visibility = 'visible';
-        } 
+        }
 
         if (noOption == "Employed (permanent)") {
           jQuery('#employment_changed_info').show();
           document.getElementById("employment_changed_info").style.visibility = 'visible';
-        } 
+        }
 
         if (noOption == "Self employed") {
           jQuery('#government_scheme_info').show();
           document.getElementById("government_scheme_info").style.visibility = 'visible';
-        } 
+        }
 
         if (noOption == "Informal trader") {
           jQuery('#government_scheme_info').show();
           document.getElementById("government_scheme_info").style.visibility = 'visible';
-        } 
+        }
 
         if (noOption == "Unemployed") {
           jQuery('#unemployed-info').show();
           document.getElementById("unemployed-info").style.visibility = 'visible';
-        } 
+        }
 
       }
 
@@ -367,7 +369,7 @@ session_start();
         jQuery('#disability_type-lbl').hide();
         document.getElementById("disability_type-lbl").style.visibility = 'hidden';
         jQuery('#disability_type-lbl').show();
-        document.getElementById("disability_type-lbl").style.visibility = 'visible';               
+        document.getElementById("disability_type-lbl").style.visibility = 'visible';
       } else {
         jQuery('#disability_type-lbl').show();
         document.getElementById("disability_type-lbl").style.visibility = 'visible';
@@ -548,7 +550,7 @@ session_start();
               </a>
             </li>
 
-              <?php 
+              <?php
 
               include("connect/connectDB.php"); // connection to db
               error_reporting(0);
@@ -574,9 +576,13 @@ session_start();
                   <li class="u-nav-item">
                     <a class="u-button-style u-nav-link u-white" href="register.php">Register
                     </a>
-                  </li>                  
+                  </li>
                 </ul>
               </div>
+            </li>
+            <li class="u-nav-item">
+              <a class="u-button-style u-nav-link" href="report.php">Progress
+              </a>
             </li>
 
             <?php } else { ?>
@@ -615,22 +621,22 @@ session_start();
                   </a>
                 </li>
                 <li class="u-nav-item">
-                  <a class="u-button-style u-nav-link" href="about.php">About Communities Matter
+                  <a class="u-button-style u-nav-link" href="about.php">About Us
                   </a>
                 </li>
                 <li class="u-nav-item">
-                  <a class="u-button-style u-nav-link" href="Survey.php">Survey
+                  <a class="u-button-style u-nav-link" href="survey.php">Survey
                   </a>
                 </li>
 
-              <?php 
+              <?php
 
               include("connect/connectDB.php"); // connection to db
               error_reporting(0);
               session_start();
 
-              if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) 
-                { 
+              if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
+                {
               ?>
 
               <li class="u-nav-item">
@@ -638,14 +644,21 @@ session_start();
                 <div class="u-nav-popup">
                   <ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-4">
                     <li class="u-nav-item">
-                      <a class="u-button-style u-nav-link" href="register.php">Profile</a>
+                      <a class="u-button-style u-nav-link" href="profile.php">Profile</a>
                     </li>
                     <li class="u-nav-item">
-                      <a class="u-button-style u-nav-link" href="login.php">Logout</a>
+                      <a class="u-button-style u-nav-link" href="logout.php">Logout</a>
+                    </li>
+                    <li class="u-nav-item">
+                      <a class="u-button-style u-nav-link" href="register.php">Register</a>
                     </li>
                   </ul>
                 </div>
               </li>
+                <li class="u-nav-item">
+                  <a class="u-button-style u-nav-link" href="report.php">Progress
+                  </a>
+                </li>
 
               <?php } else { ?>
 
@@ -672,12 +685,10 @@ session_start();
             </ul>
             </div>
           </div>
-          <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>   
+          <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
         </div>
         <p align="right" style="font-size: 12px; color: #072F5F"><i>
         <?php
-
-
 
           if ($stmt = $db->prepare('SELECT first_name, surname FROM mobiliser_tbl WHERE cellnumber = ?')) {
 
@@ -700,4 +711,4 @@ session_start();
         ?>
         </i></p>
       </nav>
-    </header> 
+    </header>
