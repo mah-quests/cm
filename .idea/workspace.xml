@@ -2,18 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2aa40c3d-c76b-4930-925e-c33913e15719" name="Default Changelist" comment="Code pushed on 16 December deployment">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dev.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/communitymtter.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Home.php" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/api/API-NOTES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/api/all_mobilisers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/api/all_surveys.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/api/class/mobiliser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/api/class/surveys.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/api/create_mobiliser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/api/seach_by_cellphone.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/api/single_mobiliser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/api/single_survey.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/api/update_mobiliser.php.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/graphs/sector_genders.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/graphs/sector_genders.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/graphs/sector_sex_pronouns.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/graphs/sector_sex_pronouns.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/data-analytics.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/data-analytics.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/api/read.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/api/read.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/mobiliser-dash.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/mobiliser-dash.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/mobiliser-personal-details.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/mobiliser-personal-details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/api/class/employees.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/api/class/mobilisers.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/api/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/api/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/api/create.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/api/read.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/api/single_read.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/api/update.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/template.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/template.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/connect/dataCollection.php" beforeDir="false" afterPath="$PROJECT_DIR$/connect/dataCollection.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connect/properties.php" beforeDir="false" afterPath="$PROJECT_DIR$/connect/properties.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registers.php" beforeDir="false" afterPath="$PROJECT_DIR$/registers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/survey-id-detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/survey-id-detail.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/survey.php" beforeDir="false" afterPath="$PROJECT_DIR$/survey.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,18 +44,21 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="December18th" />
+        <entry key="$PROJECT_DIR$" value="development" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ldX4nIf4PuK1gNqz2oWhtgqJjA" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -116,6 +136,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Intial push" />
     <MESSAGE value="System App on production, deployed on the 16th December" />
     <MESSAGE value="Code pushed on 16 December deployment" />

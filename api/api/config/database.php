@@ -1,9 +1,9 @@
 <?php 
     class Database {
-        private $host = "127.0.0.1";
-        private $database_name = "api";
-        private $username = "api";
-        private $password = "api";
+        private $host = "localhost";
+        private $database_name = "app";
+        private $username = "app";
+        private $password = "app";
 
         public $conn;
 

@@ -58,7 +58,7 @@ if(isset($_POST['submit'] )) //if submit btn is pressed
 
 
 
-    //inserting values into 'mobiliser_tbl' db
+    //inserting values into 'user_authenticate_tbl' db
     $stmt = $db->prepare("
       INSERT INTO user_authenticate_tbl 
       (username, password, role) 
@@ -139,7 +139,6 @@ if(isset($_POST['submit'] )) //if submit btn is pressed
   #passwrd:invalid {
     color: red;
   }
-
 
 </style>
 

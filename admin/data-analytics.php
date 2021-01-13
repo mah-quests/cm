@@ -277,18 +277,21 @@ if ($_SESSION['loggedin']  != TRUE)   //if user is not login redirected baack to
       ?>
     </p>
 
-        <button class="btn btn-secondary btn-block">
-          MODULE 1
+        <button class="btn btn-secondary btn-block" onclick="window.location.href='data-analytics.php'">
+          RESPONDANTS: Respondants Analysis
         </button>
-        <button class="btn btn-secondary btn-block">
-          MODULE 2
+        <button class="btn btn-secondary btn-block" onclick="window.location.href='surviving-covid.php'">
+          MODULE 1: Surviving Covid-19
+        </button>         
+        <button class="btn btn-secondary btn-block" onclick="window.location.href='social-behaviour-change.php'">
+          MODULE 2: Social and behaviour change
         </button>
-        <button class="btn btn-secondary btn-block">
-          MODULE 3
+        <button class="btn btn-secondary btn-block" onclick="window.location.href='public-facilities.php'">
+          MODULE 3: Access to public facilities
         </button>
-        <button class="btn btn-secondary btn-block">
-          MODULE 4
-        </button>                        
+        <button class="btn btn-secondary btn-block" onclick="window.location.href='work-safety-covid.php'">
+          MODULE 4: Work Safety on COVID-19
+        </button>                         
 
 
   </div>

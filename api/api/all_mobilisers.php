@@ -3,18 +3,18 @@
     header("Content-Type: application/json; charset=UTF-8");
     
     include_once 'config/database.php';
-    include_once 'class/mobilisers.php';
+    include_once 'class/mobiliser.php';
 
     $database = new Database();
     $db = $database->getConnection();
 
-    $items = new mobiliser($db);
+    $items = new Mobiliser($db);
 
     $stmt = $items->getMobilisers();
     $itemCount = $stmt->rowCount();
 
 
-    echo json_encode($itemCount);
+//    echo json_encode($itemCount);
 
     if($itemCount > 0){
         
@@ -28,26 +28,28 @@
                 "mobiliser_id" => $mobiliser_id,
                 "net_structure" => $net_structure,
                 "first_name" => $first_name,
-                "surname" => $surname,
+                "surname" => $surname, 
                 "date_of_birth" => $date_of_birth,
+                "age" => $age,
                 "cellnumber" => $cellnumber,
                 "email" => $email,
                 "race" => $race,
                 "religion" => $religion,
-                "sex" => $sex,
-                "gender" => $gender,
+                "sex" => $sex,        
                 "gender_id" => $gender_id,
+                "gender" => $gender,        
+                "prefix" => $prefix,
                 "pronouns" => $pronouns,
                 "mobaliser_address" => $mobaliser_address,
-                "province" => $province,
+                "province" => $province,      
                 "district" => $district,
-                "municipality" => $municipality,
+                "municipality" => $municipality,  
                 "alternate_person" => $alternate_person,
                 "alternate_number" => $alternate_number,
                 "disable" => $disable,
                 "disability_type" => $disability_type,
-                "school_level" => $school_level,
-                "created_date" => $created_date                                                
+                "school_level" => $school_level,                
+                "created_date" => $created_date
             );
 
             array_push($mobiliserArr["body"], $e);
@@ -58,7 +60,7 @@
     else{
         http_response_code(404);
         echo json_encode(
-            array("message" => "No record found.")
+            array("message" => "No mobilisers found.")
         );
     }
 ?>

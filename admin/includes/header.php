@@ -52,7 +52,7 @@
             <li>
               <a href="mobiliser-dash.php">
                 <i class="now-ui-icons sport_user-run"></i>
-                <p>Mobilasers</p>
+                <p>Mobilisers</p>
               </a>
             </li>
             <li class="active-pro">
@@ -474,7 +474,7 @@ demo = {
       data: {
         labels: ["today", "yesterday", "2 days ago", "3 days ago", "4 days ago", "5 days ago", "6 days ago", "7 days ago", "8 days ago", "9 days ago", "10 days ago", "11 days ago"],
         datasets: [{
-          label: "Active Users",
+          label: "New Registered Mobilisers",
           borderColor: "#f96332",
           pointBorderColor: "#FFF",
           pointBackgroundColor: "#f96332",

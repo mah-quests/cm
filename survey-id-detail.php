@@ -565,7 +565,9 @@ if ($_SESSION['loggedin']  != TRUE)   //if user is not login redirected baack to
                       <div class="col-md-6" style="color: #F2A590; font-size: 20px">
                         If you lost your job during Covid, have you applied for unemployment assistance
                       </div>
-                      <div class="col-md-6">: <?php echo $rows['applied_assistance'].', '.$rows['province']; ?></div>
+                      <div class="col-md-6">: 
+                        <?php echo $rows['applied_assistance']; ?>
+                      </div>
                       <div class="col-md-6" style="color: #F2A590; font-size: 20px">
                         Has your application been successful
                       </div>
