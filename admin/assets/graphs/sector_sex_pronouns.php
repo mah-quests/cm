@@ -34,12 +34,9 @@
       function drawPronounGraphs() {
         var data = google.visualization.arrayToDataTable([
           ['Pronouns', '#'],
-          ['He', <?php echo $numOfPronounsHe; ?>],
-          ['Him', <?php echo $numOfPronounsHim; ?>],
-          ['They', <?php echo $numOfPronounsThey; ?>],
-          ['Them', <?php echo $numOfPronounsThem; ?>],
-          ['She', <?php echo $numOfPronounsShe; ?>],
-          ['Her', <?php echo $numOfPronounsHer; ?>],
+          ['He/Him', <?php echo $numOfPronounsHimNew; ?>],
+          ['They/Them', <?php echo $numOfPronounsThemNew; ?>],
+          ['She/Her', <?php echo $numOfPronounsHerNew; ?>],
           ['Other', <?php echo $numOfPronounsOther; ?>]
         ]);
 

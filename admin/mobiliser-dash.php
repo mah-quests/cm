@@ -169,7 +169,7 @@ if ($_SESSION['loggedin']  != TRUE)   //if user is not login redirected baack to
         <div class="card">
           <div class="card-header">
             <h5 class="card-category">Mobilisers Performance</h5>
-            <h4 class="card-title"> Top 10 Mobilisers</h4>
+            <h4 class="card-title"> Active Mobilisers</h4>
           </div>
           <div class="card-body">
             <div class="table-responsive">
@@ -194,7 +194,7 @@ if ($_SESSION['loggedin']  != TRUE)   //if user is not login redirected baack to
                 <tbody>
 
         <?php
-            $sql="SELECT mobiliser_tbl.mobiliser_id as mob_id, mobiliser_tbl.first_name as first_name, mobiliser_tbl.surname as surname, mobiliser_tbl.net_structure as net_structure, mobiliser_tbl.province as province, mobiliser_tbl.municipality as municipality, mobiliser_tbl.cellnumber as cellnumber, count(summary_tbl.mobiliser_id) as no_of_surveys FROM summary_tbl INNER JOIN mobiliser_tbl ON summary_tbl.mobiliser_id=mobiliser_tbl.mobiliser_id group by summary_tbl.mobiliser_id order by no_of_surveys desc LIMIT 15";
+            $sql="SELECT mobiliser_tbl.mobiliser_id as mob_id, mobiliser_tbl.first_name as first_name, mobiliser_tbl.surname as surname, mobiliser_tbl.net_structure as net_structure, mobiliser_tbl.province as province, mobiliser_tbl.municipality as municipality, mobiliser_tbl.cellnumber as cellnumber, count(summary_tbl.mobiliser_id) as no_of_surveys FROM summary_tbl INNER JOIN mobiliser_tbl ON summary_tbl.mobiliser_id=mobiliser_tbl.mobiliser_id group by summary_tbl.mobiliser_id order by no_of_surveys desc";
             $query=mysqli_query($db,$sql);
 
                 if(!mysqli_num_rows($query) > 0 )
@@ -234,6 +234,74 @@ if ($_SESSION['loggedin']  != TRUE)   //if user is not login redirected baack to
       </div>
     </div>
 
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <h5 class="card-category">Mobilisers Performance</h5>
+            <h4 class="card-title"> Non Active Mobilisers</h4>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table">
+                <thead class=" text-primary">
+                  <th>
+                    Name
+                  </th>
+                  <th>
+                    Sector Represented
+                  </th>
+                  <th>
+                    Cellphone Number
+                  </th>
+                  <th>
+                    Municipality, Province
+                  </th>                  
+                  <th class="text-right">
+                    Number of Surveys
+                  </th>
+                </thead>
+                <tbody>
+
+        <?php
+            $sql="select * from mobiliser_tbl where mobiliser_id not in (select distinct mobiliser_id from summary_tbl) order by net_structure desc";
+            $query=mysqli_query($db,$sql);
+
+                if(!mysqli_num_rows($query) > 0 )
+                {
+                    echo '<td colspan="7">
+                            <center>
+                                No User-Data!
+                            </center>
+                        </td>';
+                } else {               
+                    while($rows=mysqli_fetch_array($query)) {
+                        
+
+                    echo ' <tr>
+                            <td>'.$rows['first_name'].' '.$rows['surname'].' </td>
+                            <td>'.$rows['net_structure'].'</td>
+                            <td>'.$rows['cellnumber'].'</td>
+                            <td>'.$rows['municipality'].', '.$rows['province'].' </td>
+                            <td align="right">
+                              0
+                            </td>
+                            </tr>';
+
+                    }   
+                }
+
+            ?>
+
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   <footer class="footer">
     <div class=" container-fluid ">

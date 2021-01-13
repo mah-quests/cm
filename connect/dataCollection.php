@@ -706,27 +706,33 @@ $numOfSexOther = mysqli_num_rows($result);
 //Pronous
 $sql = "SELECT * FROM respondant_contact_tbl where pronouns='He' ";
 $result = mysqli_query($db, $sql);
-$numOfPronounsHe = mysqli_num_rows($result);
+$numOfPronounsHeOld = mysqli_num_rows($result);
 
 $sql = "SELECT * FROM respondant_contact_tbl where pronouns='Him' ";
 $result = mysqli_query($db, $sql);
-$numOfPronounsHim = mysqli_num_rows($result);
+$numOfPronounsHimOld = mysqli_num_rows($result);
+
+$numOfPronounsHimNew = $numOfPronounsHeOld + $numOfPronounsHimOld;
 
 $sql = "SELECT * FROM respondant_contact_tbl where pronouns='They' ";
 $result = mysqli_query($db, $sql);
-$numOfPronounsThey = mysqli_num_rows($result);
+$numOfPronounsTheyOld = mysqli_num_rows($result);
 
 $sql = "SELECT * FROM respondant_contact_tbl where pronouns='Them' ";
 $result = mysqli_query($db, $sql);
-$numOfPronounsThem = mysqli_num_rows($result);
+$numOfPronounsThemOld = mysqli_num_rows($result);
+
+$numOfPronounsThemNew = $numOfPronounsTheyOld + $numOfPronounsThemOld;
 
 $sql = "SELECT * FROM respondant_contact_tbl where pronouns='She' ";
 $result = mysqli_query($db, $sql);
-$numOfPronounsShe = mysqli_num_rows($result);
+$numOfPronounsSheOld = mysqli_num_rows($result);
 
 $sql = "SELECT * FROM respondant_contact_tbl where pronouns='Her' ";
 $result = mysqli_query($db, $sql);
-$numOfPronounsHer = mysqli_num_rows($result);
+$numOfPronounsHerOld = mysqli_num_rows($result);
+
+$numOfPronounsHerNew = $numOfPronounsSheOld + $numOfPronounsHerOld;
 
 $sql = "SELECT * FROM respondant_contact_tbl where pronouns='Other' ";
 $result = mysqli_query($db, $sql);
@@ -1441,8 +1447,14 @@ $numOfSomewhatSafeWorkplace = mysqli_num_rows($result);
 
 $sql = "SELECT * FROM work_safety_tbl where employer_measures='COVID-19-manager-onsite' ";
 $result = mysqli_query($db, $sql);
-$numOfCOVIDManager = mysqli_num_rows($result);
+$numOfCOVIDManagerOld = mysqli_num_rows($result);
 
+
+$sql = "SELECT * FROM work_safety_tbl where covid_19_manager='Yes' ";
+$result = mysqli_query($db, $sql);
+$numOfCOVIDManagerNew = mysqli_num_rows($result);
+
+$numOfCOVIDManager = $numOfCOVIDManagerOld  + $numOfCOVIDManagerNew;
 
 $sql = "SELECT * FROM work_safety_tbl where employer_measures='daily-temperature-checks' ";
 $result = mysqli_query($db, $sql);

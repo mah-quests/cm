@@ -176,10 +176,10 @@ include_once 'includes/header.php';
     //inserting values into 'work_safety_tbl' db
     $stmt = $db->prepare("
       INSERT INTO work_safety_tbl 
-      (unique_code, summary_id, employer_safe_environment, employer_measures, workplace_guidelines, access_infomation, travel_to_work, public_transport, public_transport_measures ) 
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
+      (unique_code, summary_id, employer_safe_environment, employer_measures, workplace_guidelines, access_infomation, travel_to_work, public_transport, public_transport_measures, covid_19_manager, daily_temperature, changed_policies, sanitised_at_entry, wearing_masks, driver_wearing_mask, window_open, one_space ) 
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
-    $stmt->bind_param("sisssssss", $unique_code, $summary_id, $employer_safe_environment, $employer_measures, $workplace_guidelines, $access_infomation, $travel_to_work, $public_transport, $public_transport_measures);
+    $stmt->bind_param("sisssssssssssssss", $unique_code, $summary_id, $employer_safe_environment, $employer_measures, $workplace_guidelines, $access_infomation, $travel_to_work, $public_transport, $public_transport_measures, $covid_19_manager, $daily_temperature, $changed_policies, $sanitised_at_entry, $wearing_masks, $driver_wearing_mask, $window_open, $one_space);
  
       $unique_code = $reference; 
       $summary_id = $summary_id_key;
@@ -189,10 +189,60 @@ include_once 'includes/header.php';
       $access_infomation = $_POST['access_infomation']; 
       $travel_to_work = $_POST['travel_to_work'];  
       $public_transport = $_POST['public_transport'];  
-      $public_transport_measures = $_POST['public_transport_measures'];  
+      $public_transport_measures = $_POST['public_transport_measures']; 
+      $covid_19_manager = $_POST['covid_19_manager'];  
+      $daily_temperature = $_POST['daily_temperature']; 
+      $changed_policies  = $_POST['changed_policies'];
+      $sanitised_at_entry = $_POST['sanitised_at_entry']; 
+      $wearing_masks = $_POST['wearing_masks'];  
+      $driver_wearing_mask = $_POST['driver_wearing_mask'];   
+      $window_open = $_POST['window_open'];    
+      $one_space = $_POST['one_space'];    
 
       $stmt->execute();
 
+    // Module 5: Hygiene Questions
+    //inserting values into 'hygiene_tbl' db
+    $stmt = $db->prepare("
+      INSERT INTO hygiene_tbl 
+      (unique_code, summary_id, wash_hands, alcohol_based_sanitisers, avoid_touching, disinfect_surfaces, disinfect_objects, fresh_air, social_distance ) 
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
+
+    $stmt->bind_param("sisssssss", $unique_code, $summary_id, $wash_hands, $alcohol_based_sanitisers, $avoid_touching, $disinfect_surfaces, $disinfect_objects, $fresh_air, $social_distance);
+ 
+      $unique_code = $reference; 
+      $summary_id = $summary_id_key;
+      $wash_hands = $_POST['wash_hands'];  
+      $alcohol_based_sanitisers = $_POST['alcohol_based_sanitisers'];   
+      $avoid_touching = $_POST['avoid_touching'];    
+      $disinfect_surfaces = $_POST['disinfect_surfaces'];     
+      $disinfect_objects = $_POST['disinfect_objects'];      
+      $fresh_air = $_POST['fresh_air'];       
+      $social_distance  = $_POST['social_distance'];    
+
+      $stmt->execute();
+
+
+
+    // Module 6: Attitudes to the Vaccine
+    //inserting values into 'vaccine_opinion_tbl' db
+    $stmt = $db->prepare("
+      INSERT INTO vaccine_opinion_tbl 
+      (unique_code, summary_id, quickly_as_possible, prioritised_health_workers, prioritised_teachers, informed_enough, vaccines_safe, something_5g ) 
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+
+    $stmt->bind_param("sissssss", $unique_code, $summary_id, $quickly_as_possible, $prioritised_health_workers, $prioritised_teachers, $informed_enough, $vaccines_safe, $something_5g);
+ 
+      $unique_code = $reference; 
+      $summary_id = $summary_id_key;
+      $quickly_as_possible = $_POST['quickly_as_possible'];   
+      $prioritised_health_workers = $_POST['prioritised_health_workers'];
+      $prioritised_teachers = $_POST['prioritised_teachers']; 
+      $informed_enough = $_POST['informed_enough'];  
+      $vaccines_safe = $_POST['vaccines_safe'];   
+      $something_5g = $_POST['something_5g'];     
+
+      $stmt->execute();
 
 
         $system_email = 'survey@app.sanaccsf.org.za';
@@ -355,7 +405,7 @@ include_once 'includes/header.php';
 
               <div class="col-sm-6">
                 <div class="u-form-email u-form-group u-form-partition-factor-2 u-form-group-1">
-                  <label for="gender_id" class="u-label">Gender Identity (*)</label>
+                  <label for="gender_id" class="u-label">Sexual Orientation (*)</label>
                     <div style="width:100%">
                     <select class="u-grey-5 u-input u-input-rectangle" name="gender_id" id="gender_id" size="1" class="form-control unit"  required>
                       <option selected value=""></option>
@@ -410,13 +460,9 @@ include_once 'includes/header.php';
                     <div style="width:100%">
                     <select class="u-grey-5 u-input u-input-rectangle" name="pronouns" id="pronouns" size="1" class="form-control unit"  required>
                       <option selected value=""></option>
-                      <option value="He">He</option>
-                      <option value="Him">Him</option>
-                      <option value="They">They</option>
-                      <option value="Them">Them</option>
-                      <option value="She">She</option>
-                      <option value="Her">Her</option>
-                      <option value="Other">Other</option>
+                      <option value="He-Him">He/him</option>
+                      <option value="She-Her">She/her</option>
+                      <option value="They-Them">They/them</option>
                     </select>
                     </div>
                 </div>          
@@ -480,6 +526,7 @@ include_once 'includes/header.php';
                   <label for="employment_status" class="u-label">Which of the following categories best describes your employment status? (*)</label>
                   <select id="employment_status" name="employment_status" class="u-grey-5 u-input u-input-rectangle" class="form-control unit"  required>
                     <option selected value=""></option>
+                    <option value="Student">Student</option>
                     <option value="Employed, working 1-20 hours per week">Employed, working 1-20 hours per week</option>
                     <option value="Employed, working 21 – 40+ or more hours per week">Employed, working 21 – 40+ or more hours per week</option>
                     <option value="Not employed, looking for work">Not employed, looking for work</option>
@@ -821,38 +868,48 @@ include_once 'includes/header.php';
           </div>
 
       <div class="u-form-group u-form-select u-form-group-20">
-        <br><h3>Module 4: Work Safety on COVID-19</h3>
+        <br><h3>Module 4: Work and Travel Safety on COVID-19</h3>
       </div>
 
           <div class="row">
 
             <div class="col-sm-12">
               <div class="u-form-group u-form-partition-factor-2 u-form-select u-form-group-10"><br>
+                <label for="currently_employed" class="u-label">Are you currently employed</label>
+                <select id="currently_employed" name="currently_employed" class="u-grey-5 u-input u-input-rectangle" onchange="showHideCurrentlyEmployed(this.value)" required>
+                  <option selected value=""></option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-sm-12"  id="employed_work_conditions" style="display: none;">
+              <div class="u-form-group u-form-partition-factor-2 u-form-select u-form-group-10"><br>
                 <label for="select-e2ab" class="u-label">Has your employer taken any steps to make your working environment safe against COVID infection? (*)</label>
-                <select id="employer_safe_environment" name="employer_safe_environment" class="u-grey-5 u-input u-input-rectangle" onchange="showHideEmployerActions(this.value)" required>
+                <select id="employer_safe_environment" name="employer_safe_environment" class="u-grey-5 u-input u-input-rectangle" onchange="showHideEmployerActions(this.value)">
                   <option selected value=""></option>
                   <option value="Yes">Yes</option>
                   <option value="No">No</option>
                   <option value="Somewhat">Somewhat</option>
                 </select>
               </div>
-            </div>
+            </div>            
 
 
             <div class="col-sm-12" id="employer_actions" style="display: none;">
-              <div class="u-form-group u-form-partition-factor-2 u-form-select u-form-group-10" >
-                <label for="employer_measures" class="u-label">Which of the following measures has your employer taken?</label>
-                <select id="employer_measures" name="employer_measures" class="u-grey-5 u-input u-input-rectangle">
-                    <option selected value=""></option>
-                  <option value="COVID-19-manager-onsite">COVID-19 Manager onsite</option>
-                  <option value="daily-temperature-checks">Daily temperature checks for all staff</option>
-                  <option value="changed-policies?">Changed policies for sick leave?</option>
-                </select>
+              <div class="u-form-group u-form-select u-form-group-13">
+                <label for="employer_measures" class="u-label">Which of the following measures has your employer taken? <i> Tick all that apply:</i></label>
+                <div class="u-form-wrapper" style="text-align: left;" >
+                  <input type="checkbox" name="covid_19_manager" id="covid_19_manager" value="Yes">
+                  <label for="covid_19_manager">COVID-19 Manager onsite</label><br>
+                  <input type="checkbox" name="daily_temperature" id="daily_temperature" value="Yes">
+                  <label for="daily_temperature">Daily temperature checks for all staff</label><br>
+                  <input type="checkbox" name="changed_policies" id="changed_policies" value="Yes">
+                  <label for="changed_policies">Changed policies for sick leave</label><br>
+                </div>
               </div>
-            </div>
 
-
-            <div class="col-sm-12">
               <div class="u-form-group u-form-partition-factor-2 u-form-select u-form-group-10">
                 <label for="workplace_guidelines" class="u-label">Do you know the guidelines for the workplace during this pandemic?</label>
                 <select id="workplace_guidelines" name="workplace_guidelines" class="u-grey-5 u-input u-input-rectangle" onchange="showHideGuidelines(this.value)" >
@@ -866,7 +923,9 @@ include_once 'includes/header.php';
 
             <div class="col-sm-12" id="access_workplace_regulations" style="display: none;">
               <div class="u-form-group u-form-partition-factor-2 u-form-select u-form-group-10">
-                <label for="access_infomation" class="u-label"> Where are you accessing information on workplace regulations under Covid-19?</label>
+                <label for="access_infomation" class="u-label"> 
+                  Where are you accessing information on workplace regulations under Covid-19?
+                </label>
                 <select id="access_infomation" name="access_infomation" class="u-grey-5 u-input u-input-rectangle">
                   <option selected value=""></option>
                   <option value="Work Office">Work Office</option>
@@ -886,10 +945,9 @@ include_once 'includes/header.php';
               </div>
             </div>
 
-
-            <div class="col-sm-12">
+            <div class="col-sm-12" id="travel_to_work_and_around" style="display: none;">
               <div class="u-form-group u-form-partition-factor-2 u-form-select u-form-group-10">
-                <label for="travel_to_work" class="u-label">How do you travel to work?</label>
+                <label for="travel_to_work" class="u-label">How do you travel around?</label>
                 <select id="travel_to_work" name="travel_to_work" class="u-grey-5 u-input u-input-rectangle" onchange="showHideTransportInfo(this.value)">
                   <option selected value=""></option>
                   <option  value="Own-car">Own car</option>
@@ -904,19 +962,22 @@ include_once 'includes/header.php';
               </div>
             </div>
 
-            <div class="col-sm-12">
-              <div class="u-form-group u-form-partition-factor-2 u-form-select u-form-group-10" id="publicTransportInfo" style="display: none;">
-                <label for="public_transport" class="u-label">Are there safety measures that you can see?</label>
-                <select id="public_transport" name="public_transport" class="u-grey-5 u-input u-input-rectangle">
-                    <option selected value=""></option>
-                  <option  value="sanitised-at-entry">passengers sanitised at entry</option>
-                  <option value="wearing-masks"> passengers wearing masks</option>
-                  <option value="driver-wearing-mask">Is the driver wearing a mask
-                    throughout the trip?</option>
-                  <option value="window-open">Is there a window open to allow for
-                    air to flow?</option>
-                  <option value="1-space">Is there at least 1 space between passengers?</option>
-                </select>
+            <div class="col-sm-12" id="publicTransportInfo" style="display: none;">
+              <div class="u-form-group u-form-select u-form-group-13">
+                <label for="public_transport" class="u-label">Are there safety measures that you can see? <i> Tick all that apply:</i></label>
+                <div class="u-form-wrapper" style="text-align: left;" >
+                  <input type="checkbox" name="sanitised_at_entry" id="sanitised_at_entry" value="Yes">
+                  <label for="sanitised_at_entry">Passengers sanitised at entry</label><br>
+                  <input type="checkbox" name="wearing_masks" id="wearing_masks" value="Yes">
+                  <label for="wearing_masks">Passengers wearing masks</label><br>
+                  <input type="checkbox" name="driver_wearing_mask" id="driver_wearing_mask" value="Yes">
+                  <label for="driver_wearing_mask">Is the driver wearing a mask throughout the trip</label><br>
+                  <input type="checkbox" name="window_open" id="window_open" value="Yes">
+                  <label for="window_open">Is there a window open to allow for
+                    air to flow</label><br>
+                  <input type="checkbox" name="one_space" id="one_space" value="Yes">
+                  <label for="one_space">Is there at least 1 space between passengers</label><br>                                    
+                </div>
               </div>
             </div>
 
@@ -926,6 +987,216 @@ include_once 'includes/header.php';
                 <textarea placeholder="Please enter details" rows="4" cols="50" id="public_transport_measures" name="public_transport_measures" class="u-grey-5 u-input u-input-rectangle"></textarea>
               </div>
             </div>
+          </div>
+
+
+      <div class="u-form-group u-form-select u-form-group-20">
+        <br><h3>Module 5: Hygiene Questions</h3>
+        <b><i>
+          How much do you practice the following measures to prevent COVID
+        </i></b>
+      </div><br>
+
+          <div class="row">
+
+            <div class="col-sm-12">
+              <div class="u-form-group u-form-partition-factor-2 u-form-select u-form-group-10">
+                <label for="wash_hands" class="u-label">Regularly wash hands with soap and water for at least 20 seconds</label>
+                <select id="wash_hands" name="wash_hands" class="u-grey-5 u-input u-input-rectangle" required onchange="showHideModule05Question01(this.value)">
+                  <option selected value=""></option>
+                  <option value="throughout-the-day">Throughout the day</option>
+                  <option value="daily">Daily</option>
+                  <option value="few-times-week">A few times a week</option>
+                  <option value="weekly">Weekly</option>
+                  <option value="3-times-month">3 times or less a month</option>
+                  <option value="never">Never</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-sm-12" id="hygiene-number-01-info" style="display: none;">
+              <div class="u-form-group u-form-partition-factor-2 u-form-select u-form-group-10">
+                <label for="alcohol_based_sanitisers" class="u-label">Use alcohol-based hand sanitisers when you can’t use soap and water</label>
+                <select id="alcohol_based_sanitisers" name="alcohol_based_sanitisers" class="u-grey-5 u-input u-input-rectangle" required onchange="showHideModule05Question02(this.value)">
+                  <option selected value=""></option>
+                  <option value="throughout-the-day">Throughout the day</option>
+                  <option value="daily">Daily</option>
+                  <option value="few-times-week">A few times a week</option>
+                  <option value="weekly">Weekly</option>
+                  <option value="3-times-month">3 times or less a month</option>
+                  <option value="never">Never</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-sm-12" id="hygiene-number-02-info" style="display: none;">
+              <div class="u-form-group u-form-partition-factor-2 u-form-select u-form-group-10">
+                <label for="avoid_touching" class="u-label">Avoid touching your eyes, nose and mouth</label>
+                <select id="avoid_touching" name="avoid_touching" class="u-grey-5 u-input u-input-rectangle" required onchange="showHideModule05Question03(this.value)">
+                  <option selected value=""></option>
+                  <option value="throughout-the-day">Throughout the day</option>
+                  <option value="daily">Daily</option>
+                  <option value="few-times-week">A few times a week</option>
+                  <option value="weekly">Weekly</option>
+                  <option value="3-times-month">3 times or less a month</option>
+                  <option value="never">Never</option>
+                </select>
+              </div>
+            </div>            
+
+            <div class="col-sm-12" id="hygiene-number-03-info" style="display: none;">
+              <div class="u-form-group u-form-partition-factor-2 u-form-select u-form-group-10">
+                <label for="disinfect_surfaces" class="u-label">Clean and disinfect surfaces you use often such as tabletops, desks and doorknobs</label>
+                <select id="disinfect_surfaces" name="disinfect_surfaces" class="u-grey-5 u-input u-input-rectangle" required onchange="showHideModule05Question04(this.value)">
+                  <option selected value=""></option>
+                  <option value="throughout-the-day">Throughout the day</option>
+                  <option value="daily">Daily</option>
+                  <option value="few-times-week">A few times a week</option>
+                  <option value="weekly">Weekly</option>
+                  <option value="3-times-month">3 times or less a month</option>
+                  <option value="never">Never</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-sm-12"  id="hygiene-number-04-info" style="display: none;">
+              <div class="u-form-group u-form-partition-factor-2 u-form-select u-form-group-10">
+                <label for="disinfect_objects" class="u-label">Clean and disinfect objects you use often such as cellphones, keys, wallets and bus/train cards</label>
+                <select id="disinfect_objects" name="disinfect_objects" class="u-grey-5 u-input u-input-rectangle" required  onchange="showHideModule05Question05(this.value)">
+                  <option selected value=""></option>
+                  <option value="throughout-the-day">Throughout the day</option>
+                  <option value="daily">Daily</option>
+                  <option value="few-times-week">A few times a week</option>
+                  <option value="weekly">Weekly</option>
+                  <option value="3-times-month">3 times or less a month</option>
+                  <option value="never">Never</option>
+                </select>
+              </div>
+            </div>              
+
+            <div class="col-sm-12"  id="hygiene-number-05-info" style="display: none;">
+              <div class="u-form-group u-form-partition-factor-2 u-form-select u-form-group-10">
+                <label for="fresh_air" class="u-label">Increase the amount of fresh air by opening windows</label>
+                <select id="fresh_air" name="fresh_air" class="u-grey-5 u-input u-input-rectangle" required  onchange="showHideModule05Question06(this.value)">
+                  <option selected value=""></option>
+                  <option value="throughout-the-day">Throughout the day</option>
+                  <option value="daily">Daily</option>
+                  <option value="few-times-week">A few times a week</option>
+                  <option value="weekly">Weekly</option>
+                  <option value="3-times-month">3 times or less a month</option>
+                  <option value="never">Never</option>
+                </select>
+              </div>
+            </div> 
+
+
+            <div class="col-sm-12"  id="hygiene-number-06-info" style="display: none;">
+              <div class="u-form-group u-form-partition-factor-2 u-form-select u-form-group-10">
+                <label for="social_distance" class="u-label">Keep a distance of 1.5m from people outside of my household all the time</label>
+                <select id="social_distance" name="social_distance" class="u-grey-5 u-input u-input-rectangle" required>
+                  <option selected value=""></option>
+                  <option value="throughout-the-day">Throughout the day</option>
+                  <option value="daily">Daily</option>
+                  <option value="few-times-week">A few times a week</option>
+                  <option value="weekly">Weekly</option>
+                  <option value="3-times-month">3 times or less a month</option>
+                  <option value="never">Never</option>
+                </select>
+              </div>
+            </div> 
+
+          </div>
+
+      <div class="u-form-group u-form-select u-form-group-20">
+        <br><h3>Module 6: Attitudes to the Vaccine</h3>
+      </div>
+
+          <div class="row">
+
+            <div class="col-sm-12">
+              <div class="u-form-group u-form-partition-factor-2 u-form-select u-form-group-10"><br>
+                <label for="quickly_as_possible" class="u-label">South Africa should roll out vaccines to the population as quickly as possible</label>
+                <select id="quickly_as_possible" name="quickly_as_possible" class="u-grey-5 u-input u-input-rectangle" required onchange="showHideModule06Question01(this.value)">
+                  <option selected value=""></option>
+                  <option value="Strongly Agree">Strongly Agree</option>
+                  <option value="Agree">Agree</option>
+                  <option value=" Neither Agree nor Disagree"> Neither Agree nor Disagree</option>
+                  <option value="Disagree">Disagree</option>
+                  <option value="Strongly Disagree">Strongly Disagree</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-sm-12" id="vaccine-number-01-info" style="display: none;">
+              <div class="u-form-group u-form-partition-factor-2 u-form-select u-form-group-10"><br>
+                <label for="prioritised_health_workers" class="u-label">I think that community health workers should be included as essential workers to be prioritised for the vaccine roll-out</label>
+                <select id="prioritised_health_workers" name="prioritised_health_workers" class="u-grey-5 u-input u-input-rectangle" required onchange="showHideModule06Question02(this.value)">
+                  <option selected value=""></option>
+                  <option value="Strongly Agree">Strongly Agree</option>
+                  <option value="Agree">Agree</option>
+                  <option value=" Neither Agree nor Disagree"> Neither Agree nor Disagree</option>
+                  <option value="Disagree">Disagree</option>
+                  <option value="Strongly Disagree">Strongly Disagree</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-sm-12" id="vaccine-number-02-info" style="display: none;">
+              <div class="u-form-group u-form-partition-factor-2 u-form-select u-form-group-10"><br>
+                <label for="prioritised_teachers" class="u-label">I think that teachers should be included as essential workers to be prioritised for the vaccine roll-out</label>
+                <select id="prioritised_teachers" name="prioritised_teachers" class="u-grey-5 u-input u-input-rectangle" required onchange="showHideModule06Question03(this.value)">
+                  <option selected value=""></option>
+                  <option value="Strongly Agree">Strongly Agree</option>
+                  <option value="Agree">Agree</option>
+                  <option value=" Neither Agree nor Disagree"> Neither Agree nor Disagree</option>
+                  <option value="Disagree">Disagree</option>
+                  <option value="Strongly Disagree">Strongly Disagree</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-sm-12"  id="vaccine-number-03-info" style="display: none;">
+              <div class="u-form-group u-form-partition-factor-2 u-form-select u-form-group-10"><br>
+                <label for="informed_enough" class="u-label">I  feel like I am informed enough and feel comfortable to take the vaccine </label>
+                <select id="informed_enough" name="informed_enough" class="u-grey-5 u-input u-input-rectangle" required onchange="showHideModule06Question04(this.value)">
+                  <option selected value=""></option>
+                  <option value="Strongly Agree">Strongly Agree</option>
+                  <option value="Agree">Agree</option>
+                  <option value=" Neither Agree nor Disagree"> Neither Agree nor Disagree</option>
+                  <option value="Disagree">Disagree</option>
+                  <option value="Strongly Disagree">Strongly Disagree</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-sm-12"  id="vaccine-number-04-info" style="display: none;">
+              <div class="u-form-group u-form-partition-factor-2 u-form-select u-form-group-10"><br>
+                <label for="vaccines_safe" class="u-label">The vaccines that have been approved are safe for people to take</label>
+                <select id="vaccines_safe" name="vaccines_safe" class="u-grey-5 u-input u-input-rectangle" required onchange="showHideModule06Question05(this.value)">
+                  <option selected value=""></option>
+                  <option value="Strongly Agree">Strongly Agree</option>
+                  <option value="Agree">Agree</option>
+                  <option value=" Neither Agree nor Disagree"> Neither Agree nor Disagree</option>
+                  <option value="Disagree">Disagree</option>
+                  <option value="Strongly Disagree">Strongly Disagree</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-sm-12"  id="vaccine-number-05-info" style="display: none;">
+              <div class="u-form-group u-form-partition-factor-2 u-form-select u-form-group-10"><br>
+                <label for="something_5g" class="u-label">COVID19 has something to do with 5G</label>
+                <select id="something_5g" name="something_5g" class="u-grey-5 u-input u-input-rectangle" required >
+                  <option selected value=""></option>
+                  <option value="Strongly Agree">Strongly Agree</option>
+                  <option value="Agree">Agree</option>
+                  <option value=" Neither Agree nor Disagree"> Neither Agree nor Disagree</option>
+                  <option value="Disagree">Disagree</option>
+                  <option value="Strongly Disagree">Strongly Disagree</option>
+                </select>
+              </div>
+            </div>
+
           </div>
 
               <div class="row">

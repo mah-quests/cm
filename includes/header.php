@@ -339,6 +339,23 @@ session_start();
 // Module 4
 
 
+// Module 4
+
+
+      function showHideCurrentlyEmployed() {
+        var noOption = document.getElementById("currently_employed").value;
+        if (noOption == "Yes") {
+          jQuery('#employed_work_conditions').show();
+          document.getElementById("employed_work_conditions").style.visibility = 'visible';
+        } else {
+          jQuery('#travel_to_work_and_around').show();
+          document.getElementById("travel_to_work_and_around").style.visibility = 'visible';
+          jQuery('#employed_work_conditions').hide();
+          document.getElementById("employed_work_conditions").style.visibility = 'hidden';          
+        }
+      }
+
+
       function showHideEmployerActions() {
         var noOption = document.getElementById("employer_safe_environment").value;
         if (noOption == "Yes") {
@@ -347,18 +364,23 @@ session_start();
         } else {
           jQuery('#employer_actions').hide();
           document.getElementById("employer_actions").style.visibility = 'hidden';
+          jQuery('#travel_to_work_and_around').show();
+          document.getElementById("travel_to_work_and_around").style.visibility = 'visible';          
         }
       }
-
 
       function showHideGuidelines() {
         var noOption = document.getElementById("workplace_guidelines").value;
         if (noOption == "Yes") {
           jQuery('#access_workplace_regulations').show();
           document.getElementById("access_workplace_regulations").style.visibility = 'visible';
+          jQuery('#travel_to_work_and_around').show();
+          document.getElementById("travel_to_work_and_around").style.visibility = 'visible';          
         } else {
           jQuery('#access_workplace_regulations').hide();
           document.getElementById("access_workplace_regulations").style.visibility = 'hidden';
+          jQuery('#travel_to_work_and_around').show();
+          document.getElementById("travel_to_work_and_around").style.visibility = 'visible';          
         }
       }
 
@@ -375,6 +397,91 @@ session_start();
         document.getElementById("disability_type-lbl").style.visibility = 'visible';
         jQuery('#disability_type-lbl').hide();
         document.getElementById("disability_type-lbl").style.visibility = 'hidden';
+      }
+    }
+
+
+
+// Module 5
+
+      function showHideModule05Question01() {
+          jQuery('#hygiene-number-01-info').show();
+          document.getElementById("hygiene-number-01-info").style.visibility = 'visible';
+      }
+
+      function showHideModule05Question02() {
+          jQuery('#hygiene-number-02-info').show();
+          document.getElementById("hygiene-number-02-info").style.visibility = 'visible';
+      }  
+
+      function showHideModule05Question03() {
+          jQuery('#hygiene-number-03-info').show();
+          document.getElementById("hygiene-number-03-info").style.visibility = 'visible';
+      }  
+
+      function showHideModule05Question04() {
+          jQuery('#hygiene-number-04-info').show();
+          document.getElementById("hygiene-number-04-info").style.visibility = 'visible';
+      }  
+
+      function showHideModule05Question05() {
+          jQuery('#hygiene-number-05-info').show();
+          document.getElementById("hygiene-number-05-info").style.visibility = 'visible';
+      } 
+
+      function showHideModule05Question06() {
+          jQuery('#hygiene-number-06-info').show();
+          document.getElementById("hygiene-number-06-info").style.visibility = 'visible';
+      }                              
+
+// Module 6
+
+      function showHideModule06Question01() {
+          jQuery('#vaccine-number-01-info').show();
+          document.getElementById("vaccine-number-01-info").style.visibility = 'visible';
+      }
+
+      function showHideModule06Question02() {
+          jQuery('#vaccine-number-02-info').show();
+          document.getElementById("vaccine-number-02-info").style.visibility = 'visible';
+      }  
+
+      function showHideModule06Question03() {
+          jQuery('#vaccine-number-03-info').show();
+          document.getElementById("vaccine-number-03-info").style.visibility = 'visible';
+      }  
+
+      function showHideModule06Question04() {
+          jQuery('#vaccine-number-04-info').show();
+          document.getElementById("vaccine-number-04-info").style.visibility = 'visible';
+      }  
+
+      function showHideModule06Question05() {
+          jQuery('#vaccine-number-05-info').show();
+          document.getElementById("vaccine-number-05-info").style.visibility = 'visible';
+      } 
+
+      function showHideModule06Question06() {
+          jQuery('#vaccine-number-06-info').show();
+          document.getElementById("vaccine-number-06-info").style.visibility = 'visible';
+      }                              
+
+
+
+    function showHideVaccineToBeOffered() {
+      
+      var noOption = document.getElementById("vaccine_offering").value;
+
+      if (noOption == "Yes") {
+        jQuery('#commodity-you-have-info').show();
+        document.getElementById("commodity-you-have-info").style.visibility = 'visible';
+        jQuery('#commodity-you-donot-have-info').hide();
+        document.getElementById("commodity-you-donot-have-info").style.visibility = 'hidden';        
+      } else {
+        jQuery('#commodity-you-have-info').hide();
+        document.getElementById("commodity-you-have-info").style.visibility = 'hidden';
+        jQuery('#commodity-you-donot-have-info').show();
+        document.getElementById("commodity-you-donot-have-info").style.visibility = 'visible';        
       }
     }
 

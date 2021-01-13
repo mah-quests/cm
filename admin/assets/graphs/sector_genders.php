@@ -16,7 +16,7 @@
         ]);
 
         var options = {
-          title: 'Gender Identity Stats ',
+          title: 'Sexual Orientation Stats ',
           pieHole: 0.3,
         };
 
