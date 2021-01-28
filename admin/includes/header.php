@@ -78,6 +78,12 @@
                 <i class="now-ui-icons business_chart-pie-36"></i>
                 <p>Data Analytics</p>
               </a>
+            </li>    
+            <li>
+              <a href="respondent-dublicates-details.php">
+                <i class="now-ui-icons loader_refresh"></i>
+                <p>Possible Duplications</p>
+              </a>
             </li>            
             <li class="active-pro">
               <a href="admin-logins.php">
