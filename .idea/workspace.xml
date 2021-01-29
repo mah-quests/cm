@@ -20,24 +20,426 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2aa40c3d-c76b-4930-925e-c33913e15719" name="Default Changelist" comment="">
-
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_01_11,_06_25_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2021_01_11__06_25__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_01_11,_06_32_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2021_01_11__06_32__Default_Changelist_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/admin-logins 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/communitymtter/CSF RSA dots maps - grey (SVG version) 2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/communitymtter/Fira Sans font family 2.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/communitymtter/Footer red band v1 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/communitymtter/NSP report 2020 image elements 2.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/communitymtter/Newsletter headline (Myriad Pro) 2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/communitymtter/Roboto font family 2.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/communitymtter/SANAC CSF corporate identity 2020 - QUICK REFERENCE GUIDE 2.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/communitymtter/SANAC CSF header band v1 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/communitymtter/SANAC CSF logotype 2020 (MASTER - curves) 2.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/communitymtter/comlogo - Copy 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/communitymtter/comlogo 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/css/bootstrap.min 2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/css/bootstrap.min.css 2.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/css/now-ui-dashboard 2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/css/now-ui-dashboard.css 2.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/css/now-ui-dashboard.min 2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/demo/demo 2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/demo/demo 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/fonts/nucleo-license 2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/fonts/nucleo-outline 2.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/fonts/nucleo-outline 2.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/fonts/nucleo-outline 2.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/fonts/nucleo-outline 2.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/hygiene_avoid_faceTouchingFreshAir.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/hygiene_disinfect_surfaces.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/hygiene_social_distancing.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/hygiene_washHands.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/lifestyle_changes 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/lifestyle_health_food 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/mobilisers_survey 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/public_service_application 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/public_service_earn_living 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/public_services 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/public_services_government_sassa 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/public_services_grant_ap 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/respondents_age_race 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/sector_disabilities 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/sector_employment 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/sector_genders 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/sector_mobilisers 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/sector_religions 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/sector_sex_pronouns 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/sf_people_age 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/sf_reduced_risk 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/sf_symptomps_enough_info 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/sf_targets 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/sp_stats_graphs 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/sp_stats_targets 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/surviving_positive_tests 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/surviving_services 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/surviving_tested_for_covid 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/vaccine_infoAndsafety.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/vaccine_prioritise_vaccine.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/vaccine_rollout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/vaccine_something5G.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/work_safety_access_info 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/work_safety_info_travel_work 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/work_safety_public_transport 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/graphs/work_safety_work_environment 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/img/apple-icon 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/img/bg5 2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/img/comlogo 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/img/communitymatters 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/img/default-avatar 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/img/favIco 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/img/favicon 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/img/header 2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/img/mike 2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/img/now-logo 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/img/now-ui-dashboard 2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/js/bootstrap-table-pagination 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/js/core/bootstrap.min 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/js/core/jquery.min 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/js/core/popper.min 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/js/now-ui-dashboard 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/js/now-ui-dashboard.js 2.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/js/now-ui-dashboard.min 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/js/pagination 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/js/plugins/bootstrap-notify 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/js/plugins/chartjs.min 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/js/plugins/perfect-scrollbar.jquery.min 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_alerts 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_buttons 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_cards 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_checkboxes-radio 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_dropdown 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_fixed-plugin 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_footers 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_images 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_inputs 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_misc 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_mixins 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_navbar 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_nucleo-outline 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_page-header 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_responsive 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_sidebar-and-main-panel 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_tables 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_typography 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_variables 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/cards/_card-chart 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/cards/_card-map 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/cards/_card-plain 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/cards/_card-user 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/mixins/_buttons 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/mixins/_cards 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/mixins/_dropdown 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/mixins/_inputs 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/mixins/_page-header 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/mixins/_sidebar 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/mixins/_transparency 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/mixins/_vendor-prefixes 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/plugins/_plugin-animate-bootstrap-notify 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/plugins/_plugin-perfect-scrollbar 2.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/attitude-to-vaccine.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/data-analytics 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/hygiene.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/includes/auth_validate 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/includes/header 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/mobiliser-survey-details 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/respondent-dublicates-details.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/survey-id-detail 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/surviving-covid 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/admin/work-safety-covid 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/agent_welcome_mail 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/api/API-NOTES 2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/api/all_mobilisers 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/api/all_surveys 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/api/class/mobiliser 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/api/class/surveys 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/api/config/database 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/api/create_mobiliser 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/api/seach_by_cellphone 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/api/single_mobiliser 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/api/single_survey 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/api/update_mobiliser.php 2.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/mobalizers/Mobalizer 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/mobalizers/create 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/mobalizers/endPoint 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/users/UserLogin 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/users/create 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/users/endPoint 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_demo 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/About-Communities-Matter 2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/Home 2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/Page-1 3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/Page-1 4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/Page-2 3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/Page-2 4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/Page-3 3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/Page-3 4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/communities-matter 2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/contact 2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/header-foot 2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/id_data 2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/jquery 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/jquery-3.2.1.min 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/jquery2 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/lookupTable 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/nicepage 3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/nicepage 3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/nicepage 4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/nicepage 4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/nicepage2 2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/nicepage2 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/register 2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/survey 2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/surveyFunctions 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/template 2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/template 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/template-jquery 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_availability 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connect/communities_matter.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connect/connectDB 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connect/dataCollection 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connect/properties 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contact 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doNewPassword 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doResetPassword 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/error_log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/4 2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/55e3d3404d5ab108f5d084609629317e113fdce15b4c704f752e7ed49e4ec45d_1280 2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Footerredbandv1 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/LoaderIcon 2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/SANACCSFheader 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/SANACCSFheaderbandv1 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/SANACCSFlogotypePNGimage300dpiRGB 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/SANACicon 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/Screenshot2020-09-30at23.14.17 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/UN_logo 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/childcharacter 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/communities-matter 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/constructionworkerwpickcharacter 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/consultingcharacter 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/consultingteaminmeetingcharacters 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/default-image 2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/disabled_woman_wheelchair 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/diversegroupofcharacters 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/femalewlaptopseatedcharacter 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/femalewlaptopseatedonfloorcharacter 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/lgbtipridecharacters 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/prioritising_male_character 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/traditonalhealercharacter 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/two_colleagues_characters 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/un 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/un-logo1 2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/youthwlaptopwithingearcharacter 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/footer 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/header 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input_validator 2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logged_in 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logout 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profiles 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/register 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/registers 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/save 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/survey 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/survey-id-detail 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/survey_complete_mail 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testSur 2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/validate_username 2.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/about.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin-logins.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin-logins.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/css/now-ui-dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/css/now-ui-dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/css/now-ui-dashboard.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/css/now-ui-dashboard.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/css/now-ui-dashboard.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/css/now-ui-dashboard.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/demo/demo.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/demo/demo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/demo/demo.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/demo/demo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/fonts/nucleo-license.md" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/fonts/nucleo-license.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/graphs/lifestyle_changes.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/graphs/lifestyle_changes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/graphs/lifestyle_health_food.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/graphs/lifestyle_health_food.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/graphs/mobilisers_survey.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/graphs/mobilisers_survey.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/graphs/public_service_application.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/graphs/public_service_application.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/graphs/public_service_earn_living.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/graphs/public_service_earn_living.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/graphs/public_services.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/graphs/public_services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/graphs/public_services_government_sassa.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/graphs/public_services_government_sassa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/graphs/public_services_grant_ap.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/graphs/public_services_grant_ap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/graphs/respondents_age_race.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/graphs/respondents_age_race.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/graphs/sector_disabilities.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/graphs/sector_disabilities.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/assets/graphs/sector_employment.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/graphs/sector_employment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/graphs/sector_genders.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/graphs/sector_genders.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/graphs/sector_mobilisers.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/graphs/sector_mobilisers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/graphs/sector_religions.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/graphs/sector_religions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/graphs/sector_sex_pronouns.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/graphs/sector_sex_pronouns.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/graphs/sf_people_age.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/graphs/sf_people_age.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/graphs/sf_reduced_risk.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/graphs/sf_reduced_risk.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/graphs/sf_symptomps_enough_info.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/graphs/sf_symptomps_enough_info.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/graphs/sf_targets.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/graphs/sf_targets.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/graphs/sp_stats_graphs.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/graphs/sp_stats_graphs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/graphs/sp_stats_targets.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/graphs/sp_stats_targets.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/graphs/surviving_positive_tests.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/graphs/surviving_positive_tests.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/graphs/surviving_services.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/graphs/surviving_services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/graphs/surviving_tested_for_covid.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/graphs/surviving_tested_for_covid.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/graphs/work_safety_access_info.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/graphs/work_safety_access_info.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/graphs/work_safety_info_travel_work.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/graphs/work_safety_info_travel_work.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/graphs/work_safety_public_transport.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/graphs/work_safety_public_transport.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/graphs/work_safety_work_environment.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/graphs/work_safety_work_environment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/js/bootstrap-table-pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/js/bootstrap-table-pagination.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/js/core/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/js/core/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/js/core/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/js/core/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/js/core/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/js/core/popper.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/js/now-ui-dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/js/now-ui-dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/js/now-ui-dashboard.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/js/now-ui-dashboard.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/js/pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/js/pagination.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/js/plugins/bootstrap-notify.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/js/plugins/bootstrap-notify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/js/plugins/chartjs.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/js/plugins/chartjs.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/js/plugins/perfect-scrollbar.jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/js/plugins/perfect-scrollbar.jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_alerts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_alerts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_buttons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_cards.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_cards.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_checkboxes-radio.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_checkboxes-radio.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_dropdown.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_dropdown.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_fixed-plugin.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_fixed-plugin.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_footers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_footers.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_images.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_images.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_inputs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_inputs.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_misc.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_misc.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_nucleo-outline.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_nucleo-outline.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_page-header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_page-header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_responsive.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_responsive.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_sidebar-and-main-panel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_sidebar-and-main-panel.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_tables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_tables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_typography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/cards/_card-chart.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/cards/_card-chart.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/cards/_card-map.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/cards/_card-map.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/cards/_card-plain.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/cards/_card-plain.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/cards/_card-user.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/cards/_card-user.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/mixins/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/mixins/_buttons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/mixins/_cards.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/mixins/_cards.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/mixins/_dropdown.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/mixins/_dropdown.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/mixins/_inputs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/mixins/_inputs.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/mixins/_page-header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/mixins/_page-header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/mixins/_sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/mixins/_sidebar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/mixins/_transparency.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/mixins/_transparency.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/mixins/_vendor-prefixes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/mixins/_vendor-prefixes.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/plugins/_plugin-animate-bootstrap-notify.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/plugins/_plugin-animate-bootstrap-notify.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/plugins/_plugin-perfect-scrollbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/admin/assets/scss/now-ui-dashboard/plugins/_plugin-perfect-scrollbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dashboard.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/data-analytics.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/data-analytics.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/doAdminNewPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/doAdminNewPassword.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/doResetAdminPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/doResetAdminPassword.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/dynamic-mobiliser-report.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dynamic-mobiliser-report.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/dynamic-mobiliser-reports.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dynamic-mobiliser-reports.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/dynamic-report.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dynamic-report.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/error_log" beforeDir="false" afterPath="$PROJECT_DIR$/admin/error_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/icons.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/icons.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/includes/auth_validate.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/auth_validate.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/live-dash.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/live-dash.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/mobiliser-dash.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/mobiliser-dash.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/mobiliser-details.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/mobiliser-details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/mobiliser-personal-details.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/mobiliser-personal-details.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/mobiliser-survey-details.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/mobiliser-survey-details.php" afterDir="false" />
-
+      <change beforePath="$PROJECT_DIR$/admin/notifications.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/notifications.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/performance-report.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/performance-report.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/performance-reports.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/performance-reports.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/public-facilities.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/public-facilities.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/sector-dash.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/sector-dash.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/social-behaviour-change.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/social-behaviour-change.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/survey-details.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/survey-details.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/survey-id-detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/survey-id-detail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/surveys-dash.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/surveys-dash.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/surviving-covid.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/surviving-covid.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/tables.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/tables.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/typography.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/typography.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/upgrade.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/upgrade.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/user.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/work-safety-covid.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/work-safety-covid.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agent_welcome_mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/agent_welcome_mail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/api/API-NOTES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/api/api/API-NOTES.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/api/all_mobilisers.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/api/all_mobilisers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/api/all_surveys.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/api/all_surveys.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/api/class/mobiliser.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/api/class/mobiliser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/api/class/surveys.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/api/class/surveys.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/api/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/api/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/api/create_mobiliser.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/api/create_mobiliser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/api/seach_by_cellphone.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/api/seach_by_cellphone.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/api/single_mobiliser.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/api/single_mobiliser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/api/single_survey.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/api/single_survey.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/api/update_mobiliser.php.bak" beforeDir="false" afterPath="$PROJECT_DIR$/api/api/update_mobiliser.php.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/mobalizers/Mobalizer.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/mobalizers/Mobalizer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/mobalizers/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/mobalizers/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/mobalizers/endPoint.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/mobalizers/endPoint.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/users/UserLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/users/UserLogin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/users/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/users/create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/users/endPoint.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/users/endPoint.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_demo.php" beforeDir="false" afterPath="$PROJECT_DIR$/api_demo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/About-Communities-Matter.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/About-Communities-Matter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Page-1 2.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Page-1 2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Page-1.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Page-1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Page-2 2.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Page-2 2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Page-2.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Page-2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Page-3 2.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Page-3 2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Page-3.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Page-3.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/contact.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/id_data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/id_data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/jquery-3.2.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/jquery-3.2.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/jquery2.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/jquery2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/lookupTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lookupTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/nicepage 2.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/nicepage 2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/nicepage 2.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/nicepage 2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/nicepage.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/nicepage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/nicepage.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/nicepage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/nicepage2.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/nicepage2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/nicepage2.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/nicepage2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/survey.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/survey.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/surveyFunctions.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/surveyFunctions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/template-jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/template-jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/template.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/template.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/template.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/template.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check_availability.php" beforeDir="false" afterPath="$PROJECT_DIR$/check_availability.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connect/connectDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/connect/connectDB.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/connect/dataCollection.php" beforeDir="false" afterPath="$PROJECT_DIR$/connect/dataCollection.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/connect/properties.php" beforeDir="false" afterPath="$PROJECT_DIR$/connect/properties.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doNewPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/doNewPassword.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doResetPassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/doResetPassword.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/4.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/4.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input_validator.js" beforeDir="false" afterPath="$PROJECT_DIR$/input_validator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logged_in.php" beforeDir="false" afterPath="$PROJECT_DIR$/logged_in.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profiles.php" beforeDir="false" afterPath="$PROJECT_DIR$/profiles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registers.php" beforeDir="false" afterPath="$PROJECT_DIR$/registers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report.php" beforeDir="false" afterPath="$PROJECT_DIR$/report.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/save.php" beforeDir="false" afterPath="$PROJECT_DIR$/save.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/survey-id-detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/survey-id-detail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/survey.php" beforeDir="false" afterPath="$PROJECT_DIR$/survey.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/survey_complete_mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/survey_complete_mail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testSur.php" beforeDir="false" afterPath="$PROJECT_DIR$/testSur.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/validate_username.php" beforeDir="false" afterPath="$PROJECT_DIR$/validate_username.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +472,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
